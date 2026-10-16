@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Minimundo">
+  <title>Minimundo · símbolo</title>
+  <defs>
+    <clipPath id="i"><path d="M48 4a46 46 0 0 0 0 92z"/></clipPath>
+    <clipPath id="d"><path d="M52 4a46 46 0 0 1 0 92z"/></clipPath>
+  </defs>
+  <g clip-path="url(#i)"><path d="M48 4a46 46 0 0 0 0 92z" fill="#E3A3A6"/><path d="M30 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+  <g clip-path="url(#d)"><path d="M52 4a46 46 0 0 1 0 92z" fill="#659DC0"/><path d="M55 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+</svg>

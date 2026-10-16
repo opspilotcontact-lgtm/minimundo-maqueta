@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimundo · Carritos de bebé, juguetería Montessori y librería infantil en La Carlota</title>
+<meta name="description" content="Del carrito al primer libro, sin salir de La Carlota. Carritos, sillas de coche i-Size y ropa de bebé en la puerta nueva; juguetería Montessori, juegos de mesa y libros infantiles al lado. Av. de la Paz, 59.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#234A78">
+<link rel="icon" href="img/simbolo.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/lexend-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:title" content="Minimundo · Del carrito al primer libro">
+<meta property="og:description" content="Bebé, juguetería Montessori y librería infantil en la Avenida de la Paz de La Carlota.">
+<meta property="og:image" content="img/fachada.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Minimundo",
+  "description": "Puericultura, juguetería Montessori y librería infantil en La Carlota (Córdoba).",
+  "telephone": "+34 624 84 05 24",
+  "image": "img/fachada.webp",
+  "address": {"@type": "PostalAddress", "streetAddress": "Av. de la Paz, 59", "postalCode": "14100", "addressLocality": "La Carlota", "addressRegion": "Córdoba", "addressCountry": "ES"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 37.6688974, "longitude": -4.9333163},
+  "sameAs": ["https://www.instagram.com/minimundo_kid/"],
+  "department": [
+    {"@type": "Store", "name": "Minimundo · Bebé", "description": "Carritos, sillas de coche, ropa y canastilla de bebé."},
+    {"@type": "Store", "name": "Minimundo · Libros y juego", "description": "Juguetería Montessori, juegos de mesa, puzles y libros infantiles."}
+  ]
+}
+</script>
+<style>
+@font-face{font-family:'Lexend';font-style:normal;font-weight:300 800;font-display:swap;src:url(fonts/lexend-var-latin.woff2) format('woff2')}
+:root{
+  --cal:#FBF6EE; --cal-2:#F3EADC; --tinta:#1F2340; --tinta-2:#4A4E68;
+  --anil:#234A78; --cielo:#659DC0; --rosa:#E3A3A6; --rosa-claro:#F6DCDA;
+  --linea:rgb(31 35 64/.14);
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --f:'Lexend',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cal);color:var(--tinta);font-family:var(--f);font-weight:350;font-size:1.0625rem;line-height:1.6}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:700;line-height:1.08;letter-spacing:-.025em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:76rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+[hidden]{display:none!important}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--cielo);outline-offset:3px}
+
+/* ---------- franja de propuesta ---------- */
+.franja{background:var(--tinta);color:var(--cal);font-size:.8125rem;line-height:1.4;padding:.5rem 0;text-align:center}
+.franja a{color:var(--rosa);text-underline-offset:2px}
+
+/* ---------- cabecera ---------- */
+.cab{position:sticky;top:0;z-index:40;background:var(--anil);color:var(--cal)}
+.cab .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem}
+.marca{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
+.marca svg{width:2.1rem;height:2.1rem;flex:none}
+.marca b{font-weight:600;font-size:1.45rem;letter-spacing:-.035em;line-height:1}
+.nav{display:flex;gap:1.6rem;font-size:.9375rem}
+.nav a{text-decoration:none;opacity:.88}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.cab .tel{font-weight:600;text-decoration:none;border:1.5px solid rgb(251 246 238/.5);padding:.45rem .8rem;border-radius:.35rem;font-size:.9375rem;white-space:nowrap}
+@media (max-width:860px){.nav{display:none}}
+
+/* ---------- botones ---------- */
+.btn{display:inline-block;font:600 1rem/1.2 var(--f);text-decoration:none;padding:.9rem 1.25rem;border-radius:.35rem;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn-cal{background:var(--cal);color:var(--anil)}
+.btn-linea{border-color:currentColor;color:inherit;background:transparent}
+.btn-anil{background:var(--anil);color:var(--cal)}
+.btn-tinta{background:var(--tinta);color:var(--cal)}
+
+/* ---------- portada: el mundo con dos puertas ---------- */
+.portada{background:var(--anil);color:var(--cal);padding:clamp(2.5rem,6vw,5rem) 0 0;position:relative}
+.portada .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.portada h1{font-size:clamp(2.5rem,5.6vw,4.6rem);font-weight:750}
+.portada .sub{font-size:clamp(1.0625rem,1.6vw,1.25rem);max-width:34rem;margin-top:1.4rem;color:rgb(251 246 238/.9)}
+.portada .acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.datos{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:2rem;font-size:.875rem;color:rgb(251 246 238/.78)}
+.mundo{position:relative;width:min(34rem,100%);margin-left:auto}
+.mundo svg{width:100%;height:auto;overflow:visible}
+.mitad-bebe{transform-box:fill-box}
+@media (prefers-reduced-motion:no-preference){
+  .mitad-bebe{animation:entra 1.25s .25s var(--ease) both}
+  @keyframes entra{from{transform:translateX(-46%);opacity:0}to{transform:none;opacity:1}}
+  .puertas .nueva{animation:aparece .6s 1.35s var(--ease) both}
+  @keyframes aparece{from{opacity:0;transform:translateY(.5rem)}}
+}
+.puertas{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1rem;font-size:.875rem;line-height:1.35}
+.puertas span{display:block;border-top:2px solid currentColor;padding-top:.5rem}
+.puertas .nueva{color:#F2C4C6}
+.puertas .vieja{color:#A9CBE2;text-align:right}
+.puertas strong{display:block;font-size:1.0625rem;color:var(--cal);font-weight:600}
+/* el borde inferior de la portada: una fila de cal con la línea de la acera */
+.acera{height:clamp(2.5rem,5vw,4rem);margin-top:clamp(2rem,5vw,3.5rem);background:linear-gradient(var(--cal),var(--cal)) bottom/100% 55% no-repeat,repeating-linear-gradient(90deg,var(--rosa) 0 50%,var(--cielo) 50% 100%) bottom/100% 100%}
+@media (max-width:820px){
+  .portada .wrap{grid-template-columns:1fr}
+  .mundo{order:-1;width:min(20rem,78vw);margin:0 auto}
+}
+
+/* ---------- el tallímetro ---------- */
+.seccion{padding:clamp(4rem,9vw,7rem) 0}
+.cabeza{max-width:44rem}
+.cabeza h2{font-size:clamp(2rem,4.2vw,3.25rem)}
+.cabeza p{margin-top:1rem;color:var(--tinta-2);max-width:38rem}
+.altura{position:relative;margin-top:3rem;display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:0 clamp(1rem,3vw,2.5rem)}
+.regla{position:relative;height:var(--alto);border-left:3px solid var(--tinta);
+  background:
+    repeating-linear-gradient(to top,var(--tinta) 0 2px,transparent 2px calc(var(--cm)*5)) left bottom/1.6rem 100% no-repeat,
+    repeating-linear-gradient(to top,rgb(31 35 64/.45) 0 1px,transparent 1px var(--cm)) left bottom/.8rem 100% no-repeat;
+  --cm:.62rem; --alto:calc(var(--cm)*85)}
+.regla i{position:absolute;left:1.9rem;font-style:normal;font-size:.75rem;font-weight:500;color:var(--tinta-2);transform:translateY(50%);font-variant-numeric:tabular-nums}
+.etapas{position:relative;height:calc(.62rem*85);margin:0;padding:0;list-style:none}
+.etapa{position:absolute;left:0;right:0;bottom:calc((var(--h) - 40) / 85 * 100%);border-bottom:2px solid var(--tinta);padding-bottom:.9rem;display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr) auto;gap:.5rem 1.5rem;align-items:end}
+.etapa .cm{font-size:clamp(2rem,4vw,3rem);font-weight:750;letter-spacing:-.04em;line-height:.9}
+.etapa .cm small{font-size:.4em;font-weight:500;letter-spacing:0;margin-left:.15em}
+.etapa h3{font-size:1.25rem;font-weight:650}
+.etapa p{font-size:.9375rem;color:var(--tinta-2);max-width:36rem;margin-top:.25rem}
+.etapa .donde{display:flex;gap:.35rem;font-size:.8125rem;font-weight:500;white-space:nowrap}
+.etapa .donde span{padding:.2rem .5rem;border-radius:.25rem}
+.d-bebe{background:var(--rosa);color:var(--tinta)}
+.d-libros{background:var(--cielo);color:var(--tinta)}
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+  .etapa{animation:mide linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+  @keyframes mide{from{opacity:0;transform:translateY(1.25rem)}}
+}}
+.nota-oms{margin-top:1.5rem;font-size:.8125rem;color:var(--tinta-2)}
+@media (max-width:820px){
+  .altura{grid-template-columns:2.6rem minmax(0,1fr)}
+  .regla{--cm:.84rem}
+  .regla i{display:none}
+  .etapas{height:calc(.84rem*85)}
+  .etapa{grid-template-columns:1fr;gap:.2rem}
+  .etapa .donde{order:-1;margin-bottom:.2rem}
+}
+
+/* ---------- la puerta del bebé: campo rosa ---------- */
+.bebe{background:var(--rosa);color:var(--tinta)}
+.bebe .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.bebe h2{font-size:clamp(2.1rem,4.4vw,3.5rem)}
+.bebe .texto p{margin-top:1.1rem;max-width:32rem}
+.bebe ul.lleva{margin:1.6rem 0 0;padding:0;list-style:none;border-top:2px solid var(--tinta)}
+.bebe ul.lleva li{padding:.7rem 0;border-bottom:1px solid rgb(31 35 64/.25);display:flex;justify-content:space-between;gap:1rem}
+.bebe ul.lleva li span:last-child{color:var(--tinta);opacity:1;font-weight:300;font-size:.9375rem;text-align:right}
+.isize{margin-top:1.6rem;background:var(--cal);padding:1.1rem 1.2rem;border-left:6px solid var(--anil);font-size:.9375rem;max-width:32rem}
+.isize b{font-weight:650}
+/* la hoja de carrito: herramienta */
+.hoja{background:var(--cal);border-radius:.5rem;box-shadow:0 1px 0 rgb(31 35 64/.08),0 18px 40px -22px rgb(31 35 64/.45);position:relative}
+.hoja::before{content:'';position:absolute;inset:0 0 auto 0;height:.6rem;border-radius:.5rem .5rem 0 0;background:repeating-linear-gradient(90deg,var(--rosa) 0 50%,var(--cielo) 50% 100%) 0 0/2.4rem 100%}
+.hoja form{padding:clamp(1.4rem,3vw,2.2rem)}
+.hoja h3{font-size:1.5rem}
+.hoja .intro{font-size:.9375rem;color:var(--tinta-2);margin-top:.4rem}
+fieldset{border:0;margin:1.4rem 0 0;padding:0}
+legend{font-weight:600;font-size:1rem;padding:0;margin-bottom:.55rem}
+legend .n{display:inline-block;width:1.6rem;height:1.6rem;line-height:1.6rem;text-align:center;border-radius:50%;background:var(--anil);color:var(--cal);font-size:.8125rem;margin-right:.45rem}
+.ops{display:flex;flex-wrap:wrap;gap:.45rem}
+.ops label{position:relative}
+.ops input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.ops span{display:block;padding:.55rem .8rem;border:1.5px solid var(--linea);border-radius:.3rem;font-size:.9375rem;background:#fff;transition:background .2s,border-color .2s}
+.ops input:checked+span{background:var(--anil);border-color:var(--anil);color:var(--cal)}
+.ops input:focus-visible+span{outline:3px solid var(--cielo);outline-offset:2px}
+.resultado{margin-top:1.6rem;border-top:2px dashed var(--linea);padding-top:1.2rem}
+.resultado h4{margin:0;font-size:1rem;font-weight:650}
+.resultado ul{margin:.6rem 0 0;padding-left:1.1rem;font-size:.9375rem}
+.resultado li{margin:.3rem 0}
+.resultado .vacio{font-size:.9375rem;color:var(--tinta-2);margin-top:.4rem}
+.resultado .btn{margin-top:1.2rem}
+.sinjs{font-size:.875rem;color:var(--tinta-2);margin-top:1rem}
+@media (max-width:900px){.bebe .wrap{grid-template-columns:1fr}}
+
+/* ---------- la puerta de libros y juego ---------- */
+.libros .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.libros h2{font-size:clamp(2.1rem,4.4vw,3.5rem)}
+.libros .texto p{margin-top:1.1rem;max-width:32rem;color:var(--tinta-2)}
+/* la balda: cada sección es un lomo de libro */
+.balda{display:flex;align-items:flex-end;gap:.3rem;margin:2rem 0 0;padding:0 0 0 .4rem;list-style:none;max-width:32rem;border-bottom:.55rem solid #C9A57A;height:15rem}
+.balda li{writing-mode:vertical-rl;transform:rotate(180deg);height:var(--h);flex:1 1 0;max-width:3.6rem;display:flex;align-items:center;justify-content:flex-start;padding:.8rem 0;font-weight:600;font-size:.875rem;line-height:1.15;letter-spacing:-.01em;border-radius:.25rem .25rem 0 0;box-shadow:inset 0 -.35rem 0 rgb(0 0 0/.08),inset 0 .35rem 0 rgb(255 255 255/.18)}
+.balda li:nth-child(1){--h:94%;background:var(--anil);color:var(--cal)}
+.balda li:nth-child(2){--h:80%;background:var(--rosa)}
+.balda li:nth-child(3){--h:100%;background:var(--cielo)}
+.balda li:nth-child(4){--h:72%;background:var(--cal-2);border:1.5px solid var(--linea);border-bottom:0}
+.balda li:nth-child(5){--h:88%;background:var(--tinta);color:var(--cal)}
+.balda li:nth-child(6){--h:96%;background:var(--rosa-claro)}
+@media (max-width:420px){.balda li{font-size:.8125rem}}
+.fotos{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;align-items:end}
+.arco{border-radius:999px 999px .4rem .4rem;overflow:hidden;background:var(--cielo)}
+.arco img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.fotos .b img{aspect-ratio:4/5}
+.fotos figcaption{font-size:.8125rem;color:var(--tinta-2);margin-top:.5rem}
+@media (max-width:900px){.libros .wrap{grid-template-columns:1fr}}
+
+/* ---------- Marta ---------- */
+.marta{background:var(--tinta);color:var(--cal)}
+.marta .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:end}
+.marta .voz{font-size:clamp(2rem,4.6vw,3.6rem);font-weight:650;line-height:1.1;letter-spacing:-.03em}
+.marta .voz em{font-style:normal}
+.marta .cuerpo p{color:rgb(251 246 238/.84);margin-top:1rem;max-width:30rem}
+.marta .firma{display:flex;align-items:center;gap:.6rem;margin-top:1.6rem;font-weight:600}
+.marta .firma svg{width:1.8rem;height:1.8rem}
+@media (max-width:820px){.marta .wrap{grid-template-columns:1fr}}
+
+/* ---------- visita ---------- */
+.visita .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:center}
+.fachada{position:relative}
+.fachada img{width:100%;border-radius:.4rem;aspect-ratio:1000/466;object-fit:cover}
+.fachada figcaption{font-size:.8125rem;color:var(--tinta-2);margin-top:.5rem}
+.visita h2{font-size:clamp(2rem,4vw,3rem)}
+.visita dl{margin:1.6rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.2rem;font-size:1rem}
+.visita dt{font-weight:600}
+.visita dd{margin:0;color:var(--tinta-2)}
+.visita .acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+@media (max-width:860px){.visita .wrap{grid-template-columns:1fr}}
+
+/* ---------- cierre ---------- */
+.cierre{background:var(--anil);color:var(--cal);position:relative;overflow:hidden;padding:clamp(4.5rem,10vw,8rem) 0}
+.cierre .silueta{position:absolute;right:-12vw;top:50%;width:min(46rem,80vw);transform:translateY(-50%);opacity:.95}
+.cierre .wrap{position:relative}
+.cierre h2{font-size:clamp(2.4rem,6vw,5rem);max-width:12ch}
+.cierre p{margin-top:1.2rem;max-width:30rem;color:rgb(251 246 238/.88)}
+.cierre .acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+@media (max-width:820px){.cierre .silueta{opacity:.28;right:-30vw}}
+
+/* ---------- pie ---------- */
+.pie{background:var(--tinta);color:rgb(251 246 238/.8);font-size:.875rem;padding:2.5rem 0}
+.pie .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
+.pie .marca b{font-size:1.25rem;color:var(--cal)}
+.pie a{color:var(--cal)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="c-izq"><path d="M48 4a46 46 0 0 0 0 92z"/></clipPath>
+    <clipPath id="c-der"><path d="M52 4a46 46 0 0 1 0 92z"/></clipPath>
+  </defs>
+  <symbol id="simbolo" viewBox="0 0 100 100">
+    <g clip-path="url(#c-izq)"><path d="M48 4a46 46 0 0 0 0 92z" fill="#E3A3A6"/><path d="M30 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+    <g clip-path="url(#c-der)"><path d="M52 4a46 46 0 0 1 0 92z" fill="#659DC0"/><path d="M55 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+  </symbol>
+</svg>
+
+<div class="franja">Propuesta de marca y web para Minimundo, en revisión: textos y servicios por validar con Marta. <a href="propuesta/">Ver el porqué de cada decisión</a></div>
+
+<header class="cab">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Minimundo, inicio"><svg aria-hidden="true"><use href="#simbolo"/></svg><b>minimundo</b></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#altura">A su altura</a>
+      <a href="#bebe">Bebé</a>
+      <a href="#libros">Libros y juego</a>
+      <a href="#visita">Dónde estamos</a>
+    </nav>
+    <a class="tel" href="tel:+34624840524">624 84 05 24</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="portada" aria-labelledby="t-portada">
+  <div class="wrap">
+    <div>
+      <h1 id="t-portada">Del carrito al primer libro, sin salir de La Carlota.</h1>
+      <p class="sub">Minimundo abre su segunda puerta en la Avenida de la Paz. En una, carritos, sillas de coche y ropa de bebé. En la de siempre, juguetería Montessori, juegos de mesa y libros infantiles.</p>
+      <div class="acciones">
+        <a class="btn btn-cal" href="#carrito">Elegir carrito con cita</a>
+        <a class="btn btn-linea" href="#visita">Cómo llegar</a>
+      </div>
+      <p class="datos"><span>Av. de la Paz, 59 · al lado de Tropicalia</span><span>Mañanas de 10:00 a 13:30</span><span>Tardes desde las 17:30</span></p>
+    </div>
+    <div class="mundo">
+      <svg viewBox="0 0 100 100" role="img" aria-label="El símbolo de Minimundo: un mundo hecho de dos mitades, rosa y azul, cada una con su puerta">
+        <g class="mitad-bebe" clip-path="url(#c-izq)"><path d="M48 4a46 46 0 0 0 0 92z" fill="#E3A3A6"/><path d="M30 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#234A78"/><path d="M42 8.0h6M44.8 12.2h3.2M44.8 16.4h3.2M44.8 20.6h3.2M44.8 24.8h3.2M42 29.0h6M44.8 33.2h3.2M44.8 37.4h3.2M44.8 41.6h3.2M44.8 45.8h3.2M42 50.0h6M44.8 54.2h3.2M44.8 58.4h3.2M44.8 62.6h3.2M44.8 66.8h3.2M42 71.0h6M44.8 75.2h3.2M44.8 79.4h3.2M44.8 83.6h3.2M44.8 87.8h3.2M42 92.0h6" stroke="#234A78" stroke-width=".55" fill="none"/></g>
+        <g clip-path="url(#c-der)"><path d="M52 4a46 46 0 0 1 0 92z" fill="#659DC0"/><path d="M55 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#234A78"/></g>
+      </svg>
+      <p class="puertas">
+        <span class="nueva"><strong>Bebé</strong>La puerta nueva</span>
+        <span class="vieja"><strong>Libros y juego</strong>La de siempre</span>
+      </p>
+    </div>
+  </div>
+  <div class="acera" aria-hidden="true"></div>
+</section>
+
+<section class="seccion" id="altura" aria-labelledby="t-altura">
+  <div class="wrap">
+    <div class="cabeza">
+      <h2 id="t-altura">Todo, a su altura.</h2>
+      <p>Aquí no ordenamos por secciones, sino por lo que mide tu hijo. Lo que necesita a los 50 centímetros está en una puerta. A los 115, en la otra.</p>
+    </div>
+    <div class="altura">
+      <div class="regla" aria-hidden="true">
+        <i style="bottom:calc(10/85*100%)">50</i><i style="bottom:calc(35/85*100%)">75</i><i style="bottom:calc(55/85*100%)">95</i><i style="bottom:calc(75/85*100%)">115</i>
+      </div>
+      <ol class="etapas">
+        <li class="etapa" style="--h:115">
+          <span class="cm">115<small>cm</small></span>
+          <div><h3>Hacia los 6 años: ya lee solo</h3><p>Primeros lectores, juegos de mesa para toda la familia y papelería creativa para el cole.</p></div>
+          <span class="donde"><span class="d-libros">Libros y juego</span></span>
+        </li>
+        <li class="etapa" style="--h:95">
+          <span class="cm">95<small>cm</small></span>
+          <div><h3>Hacia los 3 años: lo quiere hacer él</h3><p>Puzles, juego simbólico, cuentos para leer juntos y los primeros juegos de mesa.</p></div>
+          <span class="donde"><span class="d-libros">Libros y juego</span></span>
+        </li>
+        <li class="etapa" style="--h:75">
+          <span class="cm">75<small>cm</small></span>
+          <div><h3>Hacia el año: lo toca todo</h3><p>Juguete Montessori y de madera, libros de cartón y de tela, ropa y conjuntos para cuando ya gatea.</p></div>
+          <span class="donde"><span class="d-bebe">Bebé</span><span class="d-libros">Libros y juego</span></span>
+        </li>
+        <li class="etapa" style="--h:50">
+          <span class="cm">50<small>cm</small></span>
+          <div><h3>Antes de nacer y los primeros meses</h3><p>Carrito, silla de coche, canastilla y la primera ropa. Lo que más cuesta elegir, y lo que mejor se elige con calma.</p></div>
+          <span class="donde"><span class="d-bebe">Bebé</span></span>
+        </li>
+      </ol>
+    </div>
+    <p class="nota-oms">Alturas aproximadas: mediana de los patrones de crecimiento infantil de la OMS. Cada niño lleva su ritmo.</p>
+  </div>
+</section>
+
+<section class="seccion bebe" id="bebe" aria-labelledby="t-bebe">
+  <div class="wrap">
+    <div class="texto">
+      <h2 id="t-bebe">Elige su carrito sin prisa, y sin ir a Córdoba.</h2>
+      <p>El carrito es lo primero que compras para tu hijo y lo que más dudas da. Por eso en la puerta nueva se atiende con cita: lo pliegas, lo empujas por la acera y me cuentas cómo vais a vivir, antes de decidir nada.</p>
+      <ul class="lleva">
+        <li><span>Carritos y sillas de paseo</span><span>con cita para probarlos</span></li>
+        <li><span>Sillas de coche i-Size</span><span>se eligen por su altura</span></li>
+        <li><span>Ropa y conjuntos de bebé</span><span>de recién nacido en adelante</span></li>
+        <li><span>Canastilla y regalo de nacimiento</span><span>preparado para regalar</span></li>
+      </ul>
+      <p class="isize"><b>¿Sabías que las sillas de coche nuevas se eligen por centímetros?</b> La norma i-Size (R129) clasifica las sillas por la estatura del niño, no por su peso. Por eso aquí todo empieza midiendo.</p>
+    </div>
+
+    <div class="hoja" id="carrito">
+      <form id="hoja-carrito" aria-labelledby="t-hoja">
+        <h3 id="t-hoja">Tu hoja de carrito</h3>
+        <p class="intro">Cuatro preguntas y llegas a la cita con lo importante ya pensado.</p>
+
+        <fieldset>
+          <legend><span class="n">1</span>¿Para cuándo?</legend>
+          <div class="ops">
+            <label><input type="radio" name="cuando" value="Ya ha nacido"><span>Ya ha nacido</span></label>
+            <label><input type="radio" name="cuando" value="Faltan 1 a 3 meses"><span>Faltan 1 a 3 meses</span></label>
+            <label><input type="radio" name="cuando" value="Faltan más de 3 meses"><span>Más de 3 meses</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="n">2</span>¿Por dónde vais a pasear más?</legend>
+          <div class="ops">
+            <label><input type="radio" name="paseo" value="Aceras del pueblo"><span>Aceras del pueblo</span></label>
+            <label><input type="radio" name="paseo" value="Caminos y campo"><span>Caminos y campo</span></label>
+            <label><input type="radio" name="paseo" value="Ciudad, autobús y tiendas"><span>Ciudad y autobús</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="n">3</span>¿Qué coche tenéis?</legend>
+          <div class="ops">
+            <label><input type="radio" name="coche" value="Pequeño"><span>Pequeño</span></label>
+            <label><input type="radio" name="coche" value="Mediano o familiar"><span>Mediano o familiar</span></label>
+            <label><input type="radio" name="coche" value="Monovolumen o SUV"><span>Monovolumen o SUV</span></label>
+            <label><input type="radio" name="coche" value="Sin coche"><span>Sin coche</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="n">4</span>¿Qué buscas?</legend>
+          <div class="ops">
+            <label><input type="radio" name="busca" value="Carrito completo con capazo"><span>Carrito con capazo</span></label>
+            <label><input type="radio" name="busca" value="Silla de coche i-Size"><span>Silla de coche</span></label>
+            <label><input type="radio" name="busca" value="Silla ligera de paseo"><span>Silla ligera</span></label>
+            <label><input type="radio" name="busca" value="Aún no lo sé"><span>Aún no lo sé</span></label>
+          </div>
+        </fieldset>
+
+        <div class="resultado" aria-live="polite">
+          <h4>Lo que miraremos juntas</h4>
+          <p class="vacio" id="vacio">Marca tus respuestas y aquí aparece tu hoja.</p>
+          <ul id="miramos" hidden></ul>
+          <a class="btn btn-anil" id="pedir" href="https://wa.me/34624840524?text=Hola%20Marta%2C%20quiero%20cita%20para%20elegir%20carrito." hidden>Pedir cita por WhatsApp</a>
+        </div>
+        <noscript><p class="sinjs">Escríbenos al <a href="https://wa.me/34624840524">WhatsApp 624 84 05 24</a> y lo vemos juntas.</p></noscript>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="seccion libros" id="libros" aria-labelledby="t-libros">
+  <div class="wrap">
+    <div class="fotos">
+      <figure class="a" style="margin:0"><div class="arco"><img src="img/local-libros-sm.webp" srcset="img/local-libros-sm.webp 520w, img/local-libros.webp 900w" sizes="(max-width:900px) 55vw, 30vw" width="520" height="654" loading="lazy" alt="Pasillo de Minimundo con estanterías de madera llenas de juegos de mesa y libros infantiles, paredes rosas"></div></figure>
+      <figure class="b" style="margin:0"><div class="arco"><img src="img/estanteria-montessori-sm.webp" srcset="img/estanteria-montessori-sm.webp 520w, img/estanteria-montessori.webp 900w" sizes="(max-width:900px) 45vw, 24vw" width="520" height="520" loading="lazy" alt="Estantería blanca de cubos con juguetes Montessori de madera sobre la pared azul de la tienda"></div><figcaption>Fotos de su ficha de Google: provisionales hasta la sesión de fotos.</figcaption></figure>
+    </div>
+    <div class="texto">
+      <h2 id="t-libros">Juguetes que se tocan y libros que se leen juntos.</h2>
+      <p>La puerta de siempre: juegos, libros y juguetes educativos seleccionados con cariño. Madera, cartón y papel antes que pilas.</p>
+      <ul class="balda" aria-label="Lo que hay en la puerta de libros y juego">
+        <li>Juguetería Montessori</li>
+        <li>Juegos de mesa y puzles</li>
+        <li>Libros infantiles</li>
+        <li>Primeros lectores</li>
+        <li>Papelería creativa</li>
+        <li>Cumpleaños y comunión</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="seccion marta" aria-labelledby="t-marta">
+  <div class="wrap">
+    <h2 class="voz" id="t-marta">Soy Marta, <em>mamá de Daniela y Andrea.</em></h2>
+    <div class="cuerpo">
+      <p>Empecé con libros y juguetes elegidos uno a uno. Ahora abro la puerta de al lado para lo que viene antes: el carrito, la silla y la primera ropa.</p>
+      <p>Así lo que necesitéis, del primer paseo al primer libro, está en la misma acera. Y quien te ayuda a elegir el carrito es quien después te verá crecer.</p>
+      <p class="firma"><svg aria-hidden="true"><use href="#simbolo"/></svg>Marta · Minimundo</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion visita" id="visita" aria-labelledby="t-visita">
+  <div class="wrap">
+    <figure class="fachada" style="margin:0">
+      <img src="img/fachada.webp" width="1000" height="466" loading="lazy" alt="Fachada rosa de Minimundo en la Avenida de la Paz, junto a la tienda Tropicalia">
+      <figcaption>La fachada rosa de la Avenida de la Paz (foto de Street View, provisional).</figcaption>
+    </figure>
+    <div>
+      <h2 id="t-visita">La fachada rosa de la Avenida de la Paz.</h2>
+      <dl>
+        <dt>Dónde</dt><dd>Av. de la Paz, 59 · 14100 La Carlota (Córdoba). Al lado de Tropicalia.</dd>
+        <dt>Horario</dt><dd>Mañanas de 10:00 a 13:30. Tardes desde las 17:30.</dd>
+        <dt>Teléfono</dt><dd><a href="tel:+34624840524">624 84 05 24</a></dd>
+        <dt>Instagram</dt><dd><a href="https://www.instagram.com/minimundo_kid/">@minimundo_kid</a></dd>
+      </dl>
+      <div class="acciones">
+        <a class="btn btn-anil" href="https://www.google.com/maps/search/?api=1&amp;query=Minimundo%20Av.%20de%20la%20Paz%2059%20La%20Carlota">Abrir en Google Maps</a>
+        <a class="btn btn-linea" href="tel:+34624840524">Llamar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cierre" aria-labelledby="t-cierre">
+  <svg class="silueta" viewBox="0 0 100 100" aria-hidden="true"><use href="#simbolo"/></svg>
+  <div class="wrap">
+    <h2 id="t-cierre">Un mundo pequeño, con dos puertas.</h2>
+    <p>Pásate con calma por la Avenida de la Paz. Y si estás esperando, haz tu hoja y pide cita para el carrito: lo elegimos juntas.</p>
+    <div class="acciones">
+      <a class="btn btn-cal" href="#carrito">Hacer mi hoja de carrito</a>
+      <a class="btn btn-linea" href="#visita">Cómo llegar</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <span class="marca"><svg aria-hidden="true" style="width:1.8rem;height:1.8rem"><use href="#simbolo"/></svg><b>minimundo</b></span>
+    <span>Bebé · Libros y juego · Av. de la Paz, 59 · La Carlota</span>
+    <span>Propuesta de <a href="propuesta/">OpsPilot</a> · no indexada</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('hoja-carrito'); if(!f) return;
+  var lista=document.getElementById('miramos'), vacio=document.getElementById('vacio'), pedir=document.getElementById('pedir');
+  var consejos={
+    cuando:{'Ya ha nacido':'Vente con tu bebé: probamos la postura en el capazo o la silla.','Faltan 1 a 3 meses':'Buen momento: hay tiempo para probar y para que llegue si hay que pedirlo.','Faltan más de 3 meses':'Sin agobios: primero lo vemos y luego decides.'},
+    paseo:{'Aceras del pueblo':'Ruedas que suban bordillos y un plegado sencillo.','Caminos y campo':'Ruedas grandes y buena suspensión para el camino.','Ciudad, autobús y tiendas':'Poco peso y plegado con una mano.'},
+    coche:{'Pequeño':'Medimos el maletero: trae la medida o ven con el coche.','Mediano o familiar':'Comprobamos que cabe plegado junto a la compra.','Monovolumen o SUV':'Miramos los anclajes ISOFIX para la silla.','Sin coche':'Si no hay coche, el carrito tiene que servir para todo el día.'},
+    busca:{'Carrito completo con capazo':'Capazo y silla: cuánto tiempo usaréis cada parte.','Silla de coche i-Size':'La silla se elige por la altura de tu bebé y se prueba en tu coche.','Silla ligera de paseo':'Peso, plegado y si cabe en el maletero.','Aún no lo sé':'Empezamos por cómo vivís y de ahí sale el qué.'}
+  };
+  function pinta(){
+    var datos=new FormData(f), items=[], resumen=[];
+    ['cuando','paseo','coche','busca'].forEach(function(k){var v=datos.get(k); if(v){items.push(consejos[k][v]); resumen.push(v);}});
+    lista.innerHTML=items.map(function(t){return '<li>'+t+'</li>'}).join('');
+    var hay=items.length>0;
+    lista.hidden=!hay; vacio.hidden=hay; pedir.hidden=!hay;
+    pedir.href='https://wa.me/34624840524?text='+encodeURIComponent('Hola Marta, quiero cita para elegir carrito. Mi hoja: '+resumen.join(' · ')+'.');
+  }
+  f.addEventListener('change',pinta);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimundo · Propuesta de marca, web y presencia</title>
+<meta name="description" content="Por qué Minimundo debe ser una sola marca con dos puertas: auditoría, competencia, identidad, SEO y plan de apertura.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#234A78">
+<link rel="icon" href="../img/simbolo.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/lexend-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Lexend';font-style:normal;font-weight:300 800;font-display:swap;src:url(../fonts/lexend-var-latin.woff2) format('woff2')}
+:root{--cal:#FBF6EE;--cal-2:#F3EADC;--tinta:#1F2340;--tinta-2:#4A4E68;--anil:#234A78;--cielo:#659DC0;--rosa:#E3A3A6;--rosa-claro:#F6DCDA;--linea:rgb(31 35 64/.14);--f:'Lexend',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cal);color:var(--tinta);font-family:var(--f);font-weight:350;font-size:1.0625rem;line-height:1.6}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:3px}
+h1,h2,h3{font-weight:700;line-height:1.1;letter-spacing:-.025em;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--cielo);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.texto{max-width:42rem}
+.texto p+p{margin-top:1rem}
+.franja{background:var(--tinta);color:var(--cal);font-size:.8125rem;padding:.5rem 0;text-align:center}
+.franja a{color:var(--rosa)}
+
+.portada{background:var(--anil);color:var(--cal);padding:clamp(3rem,7vw,5.5rem) 0}
+.portada .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2rem;align-items:center}
+.portada .de{font-size:.9375rem;color:rgb(251 246 238/.8)}
+.portada h1{font-size:clamp(2.3rem,5.4vw,4.2rem);margin-top:.6rem}
+.portada .sub{margin-top:1.3rem;max-width:36rem;color:rgb(251 246 238/.9)}
+.portada svg{width:min(18rem,60vw);margin-left:auto}
+@media (max-width:760px){.portada .wrap{grid-template-columns:1fr}.portada svg{margin:0;order:-1;width:9rem}}
+
+/* el índice como regla */
+.indice{border-bottom:2px solid var(--tinta);background:var(--cal-2)}
+.indice ol{display:flex;flex-wrap:wrap;gap:0;margin:0;padding:0;list-style:none;counter-reset:n}
+.indice li{counter-increment:n}
+.indice a{display:block;padding:.9rem 1rem .8rem;font-size:.875rem;font-weight:500;text-decoration:none;border-right:1px solid var(--linea)}
+.indice a::before{content:counter(n);font-weight:700;margin-right:.45rem;color:var(--anil)}
+.indice a:hover{background:var(--cal)}
+
+.bloque{padding:clamp(3.5rem,8vw,6rem) 0;border-bottom:1px solid var(--linea)}
+.bloque h2{font-size:clamp(1.9rem,3.8vw,2.9rem);max-width:42rem}
+.bloque .entrada{font-size:1.1875rem;margin-top:1.1rem;max-width:42rem;color:var(--tinta-2)}
+
+/* cifras medidas: una regla con valores, no tarjetas */
+.medidas{margin-top:2.5rem;border-top:2px solid var(--tinta)}
+.medida{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr) minmax(0,14rem);gap:.4rem 2rem;padding:1.1rem 0;border-bottom:1px solid var(--linea);align-items:baseline}
+.medida .v{font-size:clamp(2rem,4vw,2.8rem);font-weight:750;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.medida .q{font-weight:500}
+.medida .q small{display:block;font-weight:350;color:var(--tinta-2);font-size:.9375rem;margin-top:.15rem}
+.medida .f{font-size:.8125rem;color:var(--tinta-2)}
+@media (max-width:760px){.medida{grid-template-columns:1fr}}
+
+/* el hueco: las voces de la puerta cerrada */
+.hueco{background:var(--rosa)}
+.hueco .entrada{color:var(--tinta)}
+.voces{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin-top:2.5rem}
+.voces blockquote{margin:0;font-size:1.25rem;font-weight:500;line-height:1.35;letter-spacing:-.01em;border-top:3px solid var(--tinta);padding-top:1rem}
+.voces cite{display:block;font-style:normal;font-size:.8125rem;font-weight:400;margin-top:.7rem;color:var(--tinta)}
+.aviso{margin-top:2rem;background:var(--cal);padding:1rem 1.2rem;border-left:6px solid var(--anil);font-size:.9375rem;max-width:44rem}
+@media (max-width:760px){.voces{grid-template-columns:1fr}}
+
+/* competencia: tabla */
+.tabla{margin-top:2.5rem;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.9375rem;min-width:44rem}
+th,td{text-align:left;padding:.8rem .9rem;border-bottom:1px solid var(--linea);vertical-align:top}
+thead th{font-weight:600;border-bottom:2px solid var(--tinta);font-size:.8125rem}
+tbody th{font-weight:600}
+tr.nos{background:var(--rosa-claro)}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* arquitectura: tres opciones */
+.opciones{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1.2rem;margin-top:2.5rem}
+.op{padding:1.4rem;border:1.5px solid var(--linea);border-radius:.4rem;background:#fff}
+.op.si{background:var(--anil);color:var(--cal);border-color:var(--anil)}
+.op h3{font-size:1.25rem}
+.op .tag{display:inline-block;font-size:.75rem;font-weight:600;padding:.15rem .5rem;border-radius:.2rem;background:var(--cal-2);color:var(--tinta);margin-bottom:.7rem}
+.op.si .tag{background:var(--rosa)}
+.op p{font-size:.9375rem;margin-top:.6rem}
+.op ul{margin:.7rem 0 0;padding-left:1.1rem;font-size:.9375rem}
+.op li{margin:.3rem 0}
+.op.si p,.op.si li{color:rgb(251 246 238/.92)}
+.porque{margin-top:2.5rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem 3rem;max-width:58rem}
+.porque div{border-top:2px solid var(--tinta);padding-top:.8rem}
+.porque b{display:block;font-weight:650;margin-bottom:.3rem}
+.porque p{font-size:.9375rem;color:var(--tinta-2)}
+@media (max-width:860px){.opciones,.porque{grid-template-columns:1fr}}
+
+/* identidad */
+.identidad .lamina{margin-top:2.5rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem;align-items:stretch}
+.logo-grande{background:var(--cal-2);border-radius:.4rem;padding:clamp(1.5rem,4vw,3rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem}
+.lockup{display:flex;align-items:center;gap:1rem}
+.lockup svg{width:clamp(4rem,9vw,6rem);height:auto;flex:none}
+.lockup b{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:600;letter-spacing:-.04em;line-height:1}
+.lockup small{display:block;font-size:.875rem;font-weight:400;letter-spacing:0;color:var(--tinta-2);margin-top:.35rem}
+.versiones{display:flex;gap:.7rem;flex-wrap:wrap}
+.versiones span{display:flex;align-items:center;gap:.5rem;padding:.6rem .8rem;border-radius:.3rem;font-weight:600;font-size:1.0625rem;letter-spacing:-.03em}
+.versiones svg{width:1.6rem;height:1.6rem}
+.v1{background:var(--anil);color:var(--cal)} .v2{background:var(--tinta);color:var(--cal)} .v3{background:#fff;color:var(--tinta);border:1px solid var(--linea)}
+.construccion{font-size:.9375rem;color:var(--tinta-2)}
+.colores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}
+.color{border-radius:.35rem;padding:1rem;min-height:7.5rem;display:flex;flex-direction:column;justify-content:space-between;font-size:.875rem}
+.color b{font-size:1.0625rem;font-weight:650}
+.color code{font-family:inherit;font-variant-numeric:tabular-nums;font-weight:500}
+.c-anil{background:var(--anil);color:var(--cal)} .c-cielo{background:var(--cielo);color:var(--tinta)} .c-rosa{background:var(--rosa);color:var(--tinta)} .c-cal{background:var(--cal);color:var(--tinta);border:1px solid var(--linea)} .c-tinta{background:var(--tinta);color:var(--cal)} .c-rosac{background:var(--rosa-claro);color:var(--tinta)}
+.letra{margin-top:2rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:2rem;align-items:end;border-top:2px solid var(--tinta);padding-top:1.4rem}
+.letra .muestra{font-size:clamp(3rem,8vw,6rem);font-weight:700;letter-spacing:-.05em;line-height:.9}
+.letra p{font-size:.9375rem;color:var(--tinta-2)}
+.piezas{margin-top:2rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.pieza{border-top:2px solid var(--tinta);padding-top:.8rem}
+.pieza b{display:block;font-weight:650}
+.pieza p{font-size:.9375rem;color:var(--tinta-2);margin-top:.3rem}
+@media (max-width:860px){.identidad .lamina,.letra,.piezas{grid-template-columns:1fr}}
+
+/* plan: calendario de 30 días */
+.plan{margin-top:2.5rem;list-style:none;padding:0;border-left:3px solid var(--anil);max-width:52rem}
+.plan li{position:relative;padding:0 0 1.6rem 1.6rem}
+.plan li::before{content:'';position:absolute;left:-.55rem;top:.35rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--cal);border:3px solid var(--anil)}
+.plan .cuando{font-size:.8125rem;font-weight:600;color:var(--anil)}
+.plan b{display:block;font-weight:650;font-size:1.0625rem}
+.plan p{font-size:.9375rem;color:var(--tinta-2);margin-top:.2rem}
+
+.lista-seo{margin-top:2rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem 3rem;max-width:60rem}
+.lista-seo div{border-top:2px solid var(--tinta);padding-top:.8rem}
+.lista-seo b{display:block;font-weight:650;margin-bottom:.3rem}
+.lista-seo p,.lista-seo li{font-size:.9375rem;color:var(--tinta-2)}
+.lista-seo ul{margin:.3rem 0 0;padding-left:1.1rem}
+@media (max-width:760px){.lista-seo{grid-template-columns:1fr}}
+
+.falta{background:var(--tinta);color:var(--cal)}
+.falta .entrada{color:rgb(251 246 238/.85)}
+.checks{margin-top:2rem;list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem 2.5rem;max-width:56rem}
+.checks li{padding:.75rem 0 .75rem 2rem;border-bottom:1px solid rgb(251 246 238/.18);position:relative;font-size:.9375rem}
+.checks li::before{content:'';position:absolute;left:0;top:.95rem;width:1rem;height:1rem;border:2px solid var(--rosa);border-radius:.2rem}
+.inversion{margin-top:2.5rem;padding:1.2rem 1.4rem;border:2px dashed rgb(251 246 238/.4);border-radius:.4rem;max-width:44rem}
+.inversion b{display:block}
+.falta .acciones{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;font:600 1rem/1.2 var(--f);text-decoration:none;padding:.9rem 1.25rem;border-radius:.35rem;border:2px solid transparent}
+.btn-cal{background:var(--cal);color:var(--anil)}
+.btn-linea{border-color:currentColor}
+@media (max-width:760px){.checks{grid-template-columns:1fr}}
+.fuentes{font-size:.8125rem;color:var(--tinta-2);padding:2rem 0 3rem}
+.fuentes p+p{margin-top:.4rem}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="c-izq"><path d="M48 4a46 46 0 0 0 0 92z"/></clipPath>
+    <clipPath id="c-der"><path d="M52 4a46 46 0 0 1 0 92z"/></clipPath>
+  </defs>
+  <symbol id="simbolo" viewBox="0 0 100 100">
+    <g clip-path="url(#c-izq)"><path d="M48 4a46 46 0 0 0 0 92z" fill="#E3A3A6"/><path d="M30 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+    <g clip-path="url(#c-der)"><path d="M52 4a46 46 0 0 1 0 92z" fill="#659DC0"/><path d="M55 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g>
+  </symbol>
+</svg>
+
+<div class="franja">Documento de trabajo, no indexado. <a href="../">Ver la web propuesta</a></div>
+
+<main>
+<header class="portada">
+  <div class="wrap">
+    <div>
+      <p class="de">Propuesta para Marta · Minimundo, La Carlota · 16 de octubre de 2026</p>
+      <h1>Una marca, dos puertas.</h1>
+      <p class="sub">Cómo convertir la ampliación de Minimundo en la tienda donde una familia de La Carlota compra el carrito y, años después, el primer libro. Con lo que hemos medido, lo que decidimos y por qué.</p>
+    </div>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#simbolo"/></svg>
+  </div>
+</header>
+
+<nav class="indice" aria-label="Índice">
+  <div class="wrap">
+    <ol>
+      <li><a href="#medido">Lo medido</a></li>
+      <li><a href="#hueco">El hueco</a></li>
+      <li><a href="#competencia">Competencia</a></li>
+      <li><a href="#marca">Arquitectura</a></li>
+      <li><a href="#identidad">Identidad</a></li>
+      <li><a href="#google">Google y web</a></li>
+      <li><a href="#plan">Plan de apertura</a></li>
+      <li><a href="#falta">Lo que falta</a></li>
+    </ol>
+  </div>
+</nav>
+
+<section class="bloque" id="medido" aria-labelledby="t-medido">
+  <div class="wrap">
+    <h2 id="t-medido">Hoy Minimundo existe en la calle, pero casi no existe en Google.</h2>
+    <p class="entrada">Medido el 16 de octubre de 2026, desde fuera, como lo vería una familia que busca dónde comprar.</p>
+    <div class="medidas">
+      <div class="medida"><span class="v">0</span><span class="q">reseñas en Google<small>Glu Glu bebé, adonde va la gente a por el carrito, tiene 849.</small></span><span class="f">Google Maps</span></div>
+      <div class="medida"><span class="v">0</span><span class="q">webs<small>La ficha dice «Añadir sitio web». Nada enlaza desde Google ni desde Instagram.</small></span><span class="f">Google Maps</span></div>
+      <div class="medida"><span class="v">1.248</span><span class="q">seguidores en Instagram<small>Sigue a 2.561 cuentas: el doble de las que la siguen. Es seguir para que te sigan, y eso trae poco alcance real.</small></span><span class="f">@minimundo_kid</span></div>
+      <div class="medida"><span class="v">2 de 7</span><span class="q">fotos de su ficha no son suyas<small>Una es de una tienda de ropa y otra de la fachada de Valdere. Hay que pedir a Google que las quite.</small></span><span class="f">Google Maps</span></div>
+      <div class="medida"><span class="v">117</span><span class="q">nacimientos en La Carlota en 2024<small>14.520 habitantes repartidos en 11 núcleos, a 30 km de Córdoba.</small></span><span class="f">SIMA · IECA</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque hueco" id="hueco" aria-labelledby="t-hueco">
+  <div class="wrap">
+    <h2 id="t-hueco">En esa misma puerta, una tienda de bebé ya demostró lo que el pueblo quiere.</h2>
+    <p class="entrada">En Av. de la Paz, 59 Google aún enseña «Mimos Bebe», hoy cerrada permanentemente, con 5,0 estrellas y 45 reseñas. Sus clientas no hablaban de precio ni de marcas. Hablaban de esto:</p>
+    <div class="voces">
+      <blockquote>«Mamá primeriza, no entendía ni mucho ni poco, no sabía qué carrito elegir… y allí encontré la solución.»<cite>María D., en Google, sobre Mimos Bebe</cite></blockquote>
+      <blockquote>«En las típicas tiendas de bebé en Córdoba sólo les interesaba venderme lo que ellos querían.»<cite>Antonio, en Google, sobre Mimos Bebe</cite></blockquote>
+      <blockquote>«La tienda está muy bien. Solo que hay que ir sin prisa.»<cite>Antonio, en Google, sobre Mimos Bebe</cite></blockquote>
+    </div>
+    <p class="aviso"><b>Ojo, por honestidad:</b> estas reseñas son de otro negocio. Sirven para saber qué busca la gente, nunca como testimonios de Minimundo. Las de Minimundo habrá que ganarlas desde el primer día (ver el plan).</p>
+  </div>
+</section>
+
+<section class="bloque" id="competencia" aria-labelledby="t-comp">
+  <div class="wrap">
+    <h2 id="t-comp">Para el carrito no compites con el pueblo, compites con Córdoba.</h2>
+    <p class="entrada">Glu Glu gana por catálogo y por prueba social. Minimundo no puede ganarle en metros, pero sí en cercanía, en calma y en que sigues siendo cliente cuando el niño crece.</p>
+    <div class="tabla">
+      <table>
+        <thead><tr><th scope="col">Tienda</th><th scope="col">Dónde</th><th scope="col">Google</th><th scope="col">Lo que hace mejor</th><th scope="col">Lo que no tiene</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Glu Glu bebé</th><td>Córdoba · desde 2007, más de 500 m²</td><td class="n">4,9 ★ · 849</td><td>Unas 19 marcas de carritos, lista de nacimiento online, instalan la silla en el coche. Su dueña da la cara en Instagram (unos 17.000 seguidores).</td><td>Está a 30 km. Nada que ver con juguetes ni libros.</td></tr>
+          <tr><th scope="row">El Mundo del Bebé</th><td>Córdoba · Tecnocórdoba</td><td class="n">4,8 ★ · 92</td><td>Exposición de mobiliario Alondra.</td><td>Su web no funciona.</td></tr>
+          <tr><th scope="row">Buhumi</th><td>La Carlota · Av. de la Paz, 26</td><td class="n">4,7 ★ · 15</td><td>Ropa infantil en la misma avenida.</td><td>Sin carritos y sin web ni redes encontradas.</td></tr>
+          <tr><th scope="row">Mavi</th><td>La Carlota · C. Portugal, 2</td><td class="n">0 reseñas</td><td>Categoría de bebé en Google.</td><td>Presencia casi nula.</td></tr>
+          <tr><th scope="row">Valdere</th><td>La Carlota · Av. de la Paz, 90</td><td class="n">4,9 ★ · 40</td><td>Librería y regalo con fama en el pueblo.</td><td>No es infantil ni de juego.</td></tr>
+          <tr class="nos"><th scope="row">Minimundo</th><td>La Carlota · Av. de la Paz, 59</td><td class="n">0 reseñas</td><td>La única que puede tener carrito, juguete Montessori y libro infantil en la misma acera.</td><td>Reseñas, web y una marca que se lea de lejos.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="marca" aria-labelledby="t-marca">
+  <div class="wrap">
+    <h2 id="t-marca">Recomendamos una sola marca, Minimundo, con dos puertas.</h2>
+    <p class="entrada">Valoramos tres caminos. Gana el que da más con lo que ya tenéis y el que mejor aguanta crecer.</p>
+    <div class="opciones">
+      <div class="op si">
+        <span class="tag">Recomendada</span>
+        <h3>A · Una marca, dos puertas</h3>
+        <p>«Minimundo» en las dos fachadas. Dentro, dos espacios con nombre sencillo: <b>Bebé</b> y <b>Libros y juego</b>.</p>
+        <ul><li>Aprovecha el nombre, el rótulo y los 1.248 seguidores.</li><li>Una web, una ficha y un WhatsApp: el coste que puede llevar una persona.</li><li>Lo nuevo encaja sin inventar marcas: talleres, cumpleaños, lista de nacimiento.</li></ul>
+      </div>
+      <div class="op">
+        <span class="tag">Descartada</span>
+        <h3>B · Marca hermana para el bebé</h3>
+        <p>Un nombre propio para la puericultura.</p>
+        <ul><li>Se lee más claro frente a Córdoba.</li><li>Pero empieza con 0 seguidores y 0 reseñas, y obliga a llevar dos webs, dos fichas y dos Instagram.</li></ul>
+      </div>
+      <div class="op">
+        <span class="tag">Más adelante</span>
+        <h3>C · Respaldada</h3>
+        <p>«X, de Minimundo».</p>
+        <ul><li>Tiene sentido solo si un día abre en otro pueblo con otro equipo.</li><li>Hoy añade complejidad sin beneficio.</li></ul>
+      </div>
+    </div>
+    <div class="porque">
+      <div><b>Porque el mercado es pequeño</b><p>Con 117 nacimientos al año, una tienda que solo vende carritos depende de muy pocas familias. Si a esa familia se le vende también el juguete y el libro, sigue siendo clienta diez años en lugar de uno.</p></div>
+      <div><b>Porque el carrito es la puerta de entrada</b><p>Es la compra más cara y la que más dudas da, y para hacerla hoy se va a Córdoba. Quien te ayuda a elegirlo con calma se gana la confianza para todo lo demás.</p></div>
+      <div><b>Porque ya tenéis algo que nadie tiene</b><p>Una fachada rosa conocida en la avenida y una tienda con nombre propio. Empezar otra marca de cero sería tirarlo.</p></div>
+      <div><b>Porque escala sin rehacerse</b><p>El símbolo son dos mitades de un mismo mundo. Si mañana hay una tercera línea (talleres o tienda online), la arquitectura la recibe sin cambiar el logo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque identidad" id="identidad" aria-labelledby="t-ident">
+  <div class="wrap">
+    <h2 id="t-ident">Una identidad sacada de vuestra propia fachada.</h2>
+    <p class="entrada">No hemos inventado colores. El rosa es el de la fachada de la Avenida de la Paz y el azul el de la pared de la estantería Montessori, los dos medidos en vuestras fotos. Solo los ordenamos para que se reconozcan de lejos.</p>
+    <div class="lamina">
+      <div class="logo-grande">
+        <div class="lockup"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#simbolo"/></svg><b>minimundo<small>bebé · libros y juego</small></b></div>
+        <div class="versiones">
+          <span class="v1"><svg aria-hidden="true"><use href="#simbolo"/></svg>minimundo</span>
+          <span class="v2"><svg aria-hidden="true"><use href="#simbolo"/></svg>minimundo</span>
+          <span class="v3"><svg aria-hidden="true"><use href="#simbolo"/></svg>minimundo</span>
+        </div>
+        <p class="construccion">El símbolo: un mundo partido en dos mitades, cada una con su puerta en arco, como las dos fachadas. Funciona a 16 px (icono de Instagram), en el rótulo y en una pegatina de bolsa. Sustituye a la letra manuscrita sobre acuarela, que pequeña no se lee y no aguanta un rótulo grande.</p>
+      </div>
+      <div class="colores">
+        <div class="color c-rosa"><b>Rosa fachada</b><span><code>#E3A3A6</code> · su fachada, medida a la sombra (≈ #D7A6A9). La puerta del bebé.</span></div>
+        <div class="color c-cielo"><b>Azul pared</b><span><code>#659DC0</code> · la pared de la estantería Montessori. La puerta de libros y juego.</span></div>
+        <div class="color c-anil"><b>Añil</b><span><code>#234A78</code> · el azul llevado a fondo para la marca: el texto en cal se lee con contraste de sobra.</span></div>
+        <div class="color c-tinta"><b>Tinta</b><span><code>#1F2340</code> · el texto. Nunca negro puro.</span></div>
+        <div class="color c-cal"><b>Cal</b><span><code>#FBF6EE</code> · el encalado de la avenida. El papel de todo.</span></div>
+        <div class="color c-rosac"><b>Rosa claro</b><span><code>#F6DCDA</code> · solo para fondos suaves.</span></div>
+      </div>
+    </div>
+    <div class="letra">
+      <div class="muestra" aria-hidden="true">Aa 50 cm</div>
+      <p><b>Una sola letra: Lexend.</b> Se diseñó para que leer cueste menos esfuerzo, y por eso encaja con una librería de primeros lectores. Es gratuita y se puede usar en el rótulo, la web, las etiquetas y Canva sin pagar licencias.</p>
+    </div>
+    <div class="piezas">
+      <div class="pieza"><b>El tallímetro</b><p>La idea que ordena todo: se clasifica por lo que mide el niño (50, 75, 95 y 115 cm). En la tienda, pintado en la pared para que los niños se midan y salga la foto para Instagram. Las sillas de coche i-Size ya se eligen así, por centímetros.</p></div>
+      <div class="pieza"><b>Tu hoja de carrito</b><p>Cuatro preguntas en la web que llegan por WhatsApp. Marta recibe la cita con lo importante ya pensado y la clienta llega sin agobio.</p></div>
+      <div class="pieza"><b>Rótulo y bolsa</b><p>Las dos fachadas en rosa con «minimundo» igual, y debajo de cada puerta su nombre: Bebé o Libros y juego. Una pegatina del símbolo cierra cada bolsa y cada regalo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="google" aria-labelledby="t-google">
+  <div class="wrap">
+    <h2 id="t-google">Lo que hay que hacer en Google, por orden.</h2>
+    <p class="entrada">La ficha de Google es el escaparate que más gente ve, antes que la web. Lo primero es arreglarla. La web viene detrás y la refuerza.</p>
+    <div class="lista-seo">
+      <div><b>1 · Ficha de Google</b><ul><li>Nombre: «Minimundo», igual que el rótulo. Hoy lleva palabras clave en el nombre, y Google puede penalizarlo.</li><li>Al abrir el bebé, categoría principal «Tienda de artículos para bebés»: en el pueblo solo compiten Mavi, con 0 reseñas, y Buhumi en ropa. Como secundarias, Juguetería, Librería infantil y Tienda de ropa infantil.</li><li>Quitar las 2 fotos ajenas y subir 15 reales: las dos fachadas, cada puerta por dentro y los productos.</li></ul></div>
+      <div><b>2 · Reseñas desde el día 1</b><ul><li>Un QR en el mostrador y en la bolsa, y el enlace en el WhatsApp de después de cada cita.</li><li>Contestar todas, con nombre. Así Google sabe que la ficha está viva.</li><li>Meta: 25 reseñas el primer trimestre, que ya es pasar a Buhumi y a Mavi.</li></ul></div>
+      <div><b>3 · La web</b><ul><li>Una sola web, la que proponemos, con datos de tienda para Google y cada puerta como sección propia.</li><li>Después, páginas propias para lo que la gente busca: carritos de bebé en La Carlota, sillas de coche i-Size, juguetería Montessori y librería infantil.</li><li>Enlazada desde la ficha, desde Instagram y desde el QR.</li></ul></div>
+      <div><b>4 · Instagram</b><ul><li>Dejar de seguir para que te sigan. Publicar de cada puerta, con Marta dando la cara (es lo que hace la dueña de Glu Glu).</li><li>El tallímetro de la pared como formato fijo: «¿cuánto has crecido?».</li><li>Bio con la web y el WhatsApp de cita.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque" id="plan" aria-labelledby="t-plan">
+  <div class="wrap">
+    <h2 id="t-plan">Los primeros 30 días de la puerta nueva.</h2>
+    <ol class="plan">
+      <li><span class="cuando">Antes de abrir</span><b>Marca y rótulo cerrados</b><p>Validar el símbolo, los colores y los nombres de las dos puertas. Fachada nueva en el mismo rosa.</p></li>
+      <li><span class="cuando">Semana 1</span><b>Ficha de Google al día y web publicada</b><p>Nombre, categorías, fotos reales y horario completo. La web con las marcas reales de carritos y el horario de tarde.</p></li>
+      <li><span class="cuando">Semana 1</span><b>Aviso en el pueblo</b><p>Instagram, el escaparate y una nota para los grupos de familias: «Minimundo abre su segunda puerta».</p></li>
+      <li><span class="cuando">Semanas 2 a 4</span><b>Citas de carrito y reseñas</b><p>Cada cita termina con el enlace a la reseña. El tallímetro de la pared empieza a generar fotos.</p></li>
+      <li><span class="cuando">Día 30</span><b>Medir y ajustar</b><p>Reseñas, llamadas y citas desde Google, y las búsquedas por las que aparece Minimundo. Con eso se decide la siguiente página de la web.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="bloque falta" id="falta" aria-labelledby="t-falta">
+  <div class="wrap">
+    <h2 id="t-falta">Lo que necesitamos de Marta para pasar de propuesta a tienda.</h2>
+    <p class="entrada">Mientras falte algo de esta lista, la web sigue oculta a Google. No publicamos ni un dato sin confirmar.</p>
+    <ul class="checks">
+      <li>Marcas de carritos y sillas de coche que tendrá</li>
+      <li>Horario completo, con la hora de cierre de tarde</li>
+      <li>Qué servicios dará de verdad: cita, prueba del carrito, lista de nacimiento, ayuda con la silla</li>
+      <li>Número y fecha de apertura del local nuevo</li>
+      <li>Fotos de las dos tiendas (hacemos la sesión)</li>
+      <li>Permiso para usar su nombre y el de sus hijas</li>
+      <li>Visto bueno del logo y los colores</li>
+      <li>Si el 624 84 05 24 tiene WhatsApp Business</li>
+    </ul>
+    <div class="inversion"><b>Inversión y plazos</b>Los fija el equipo de OpsPilot tras la visita a la tienda, según lo que se elija de esta propuesta.</div>
+    <div class="acciones">
+      <a class="btn btn-cal" href="../">Ver la web propuesta</a>
+      <a class="btn btn-linea" href="../#carrito">Probar la hoja de carrito</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap fuentes">
+  <p>Fuentes: Google Maps (fichas y reseñas consultadas el 16-oct-2026) · Instagram @minimundo_kid · gluglubebe.com · alondra.es · SIMA del Instituto de Estadística y Cartografía de Andalucía (La Carlota, código 14017) · Patrones de crecimiento infantil de la OMS (medianas de estatura) · Reglamento ONU n.º 129 (i-Size).</p>
+  <p>Fotos de la web: ficha de Google de Minimundo y Street View, provisionales hasta la sesión de fotos.</p>
+</div>
+</main>
+</body>
+</html>
