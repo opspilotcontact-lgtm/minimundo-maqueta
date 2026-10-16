@@ -1,2 +1,3 @@
 fuente/
 _*.html
+__pycache__/
