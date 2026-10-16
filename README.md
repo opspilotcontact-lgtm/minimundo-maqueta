@@ -1,10 +1,16 @@
-# Minimundo · propuesta de marca y web
+# Minimundo · maqueta y propuesta (OpsPilot)
 
-Propuesta de OpsPilot para Minimundo (La Carlota, Córdoba): una marca, dos puertas.
+Propuesta de marca y tienda para Minimundo (Av. de la Paz, 59 · La Carlota). No indexada.
 
-- `index.html` · la web propuesta (bebé + libros y juego, tallímetro, hoja de carrito).
-- `propuesta/` · el porqué: auditoría medida, competencia, arquitectura de marca, identidad, Google y plan de apertura.
-- `img/simbolo.svg` · el símbolo nuevo en vector.
+- `/` v2 «Elegido de uno en uno»: tienda con productos que Marta ya vende (precios de referencia), bolsa que se aparta por WhatsApp, carritos con cita, lista de nacimiento y club de lectura.
+- `/propuesta/` documento comercial: lo medido, posicionamiento, arquitectura de marca, identidad, Google y plan.
+- `/v1/` primera vuelta «una marca, dos puertas».
 
-En revisión: `noindex` y `robots.txt` bloquean buscadores hasta que Marta valide textos y servicios.
-Fotos provisionales de su ficha de Google y Street View. Letra Lexend (SIL Open Font License).
+## Regenerar la tienda
+
+```
+python sitio/generar.py
+```
+
+Lee `sitio/catalogo.json`, `sitio/tienda.css` y `sitio/tienda.js` y escribe `index.html`, `tienda/`, `producto/<slug>/`, `carritos/`, `lista/`, `js/` e `img/p/` (fotos desde `fuente/productos/`, que no se publica).
+Las notas de Marta (`NOTAS` en el generador) son frases suyas de Instagram; no se inventan.

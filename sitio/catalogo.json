@@ -1,0 +1,365 @@
+[
+ {
+  "slug": "triciclo-elliot-olmitos",
+  "nombre": "Triciclo evolutivo Elliot",
+  "marca": "Olmitos",
+  "cat": "paseo",
+  "edad": "De 12 meses a 5 años (hasta 25 kg)",
+  "etapas": [
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "Asiento giratorio 360° con respaldo regulable",
+   "Medidas 84 x 54 x 96-100-107 cm; peso 7,5 kg",
+   "Barra de empuje direccional, 2 cestas, portabotellas y bolsa"
+  ],
+  "pvp": 144.95,
+  "fuente_url": "https://olmitos.com/es/sillas-de-paseo-y-coche/triciclos/triciclo-elliot-olmitos.html",
+  "fuente": "olmitos.com",
+  "desc": "Triciclo evolutivo que empieza como carrito guiado por los padres y acaba como triciclo autónomo. El asiento gira para que el niño mire al adulto o al frente, y tiene sitio de sobra para guardar cosas.",
+  "imagen": "triciclo-elliot-olmitos.jpg",
+  "nota": "olmitos",
+  "portada": true,
+  "luna": true,
+  "reserva": true,
+  "sello": "Solo con reserva"
+ },
+ {
+  "slug": "el-ladron-de-hojas",
+  "nombre": "El ladrón de hojas",
+  "marca": "Ediciones Jaguar",
+  "cat": "libros",
+  "edad": null,
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Alice Hemming (texto) y Nicola Slater (ilustración)",
+   "32 páginas, cartoné, 275 x 250 mm",
+   "ISBN 978-84-18609-23-7 · colección Miau"
+  ],
+  "pvp": 16.95,
+  "fuente_url": "https://www.todostuslibros.com/libros/el-ladron-de-hojas_978-84-18609-23-7",
+  "fuente": "todostuslibros.com",
+  "desc": "Ardilla descubre que a su árbol le faltan hojas y sale a buscar al culpable. Un álbum divertido para explicar a los pequeños cómo llega el otoño.",
+  "imagen": "el-ladron-de-hojas.jpg",
+  "nota": "ladron",
+  "portada": true,
+  "luna": true
+ },
+ {
+  "slug": "baby-puzzles-animales-educa",
+  "nombre": "Baby Puzzles · Animales",
+  "marca": "Educa",
+  "cat": "juego",
+  "edad": "De 2 a 4 años",
+  "etapas": [
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "5 puzzles de 2 a 5 piezas",
+   "Piezas grandes y gruesas, fáciles de manipular",
+   "Caja 31,6 x 21,8 x 4,6 cm (ref. 13473)"
+  ],
+  "pvp": 14.99,
+  "fuente_url": "https://www.toysrus.es/Educa-Borr%C3%A1s-Animales-Baby-Puzzle/p/K90775C",
+  "fuente": "toysrus.es",
+  "desc": "Cinco puzzles progresivos con forma de animal que el niño monta y luego usa como figura de juego. Un primer paso para trabajar la atención y la coordinación de las manos.",
+  "imagen": "baby-puzzles-animales-educa.jpg",
+  "nota": "educa",
+  "portada": true,
+  "luna": true
+ },
+ {
+  "slug": "diario-de-mi-embarazo",
+  "nombre": "Diario de mi embarazo",
+  "marca": "San Pablo",
+  "cat": "embarazo",
+  "edad": null,
+  "etapas": [
+   "espera"
+  ],
+  "datos": [
+   "Ilustrado por Nina Stajner",
+   "32 páginas, tapa dura",
+   "ISBN 978-84-285-7198-2 · dos sobres para fotos y ecografías"
+  ],
+  "pvp": 13.5,
+  "fuente_url": "https://www.instagram.com/p/Deb7MDiIddw/",
+  "fuente": "Instagram de Minimundo (precio de Marta)",
+  "desc": "Un álbum para ir anotando el embarazo mes a mes: las primeras emociones, la primera ecografía y los preparativos. Trae sobres para guardar recuerdos y un espacio para escribir una carta al bebé.",
+  "imagen": "diario-de-mi-embarazo.jpg",
+  "nota": "diario",
+  "portada": true,
+  "luna": true,
+  "precio_suyo": true,
+  "sello": "Pocas unidades"
+ },
+ {
+  "slug": "q-box-el-espacio-manolito",
+  "nombre": "Maletín Q box · El espacio",
+  "marca": "Manolito Books",
+  "cat": "manualidades",
+  "edad": "De 3 a 6 años (4+ en la caja)",
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Maletín con asa: libro de 10 páginas, puzzle de 40 piezas y 10 figuras espaciales",
+   "Puzzle montado 52 x 38 cm; libro 13 x 13 cm",
+   "Caja 18,5 x 18,5 x 9 cm; ISBN 9788419714510"
+  ],
+  "pvp": 19.95,
+  "fuente_url": "https://manolitobooks.com/products/el-espacio",
+  "fuente": "manolitobooks.com",
+  "desc": "Un maletín con asa para leer, montar el puzzle del espacio y colocar las figuras encima. Ayuda a reconocer colores, formas y números y a relacionar palabras con imágenes.",
+  "imagen": "q-box-el-espacio-manolito.jpg",
+  "nota": "maletin",
+  "portada": true,
+  "luna": true
+ },
+ {
+  "slug": "babero-manga-larga-bosque-encantado-babate",
+  "nombre": "Babero de manga larga · Bosque encantado",
+  "marca": "Babaté Kids",
+  "cat": "comer",
+  "edad": "De 6 meses a 2 años",
+  "etapas": [
+   "0-1",
+   "1-3"
+  ],
+  "datos": [
+   "Poliéster ligero y transpirable, libre de PVC y ftalatos",
+   "Cierre de velcro ajustable al cuello y puños elásticos",
+   "Pensado para alimentación complementaria y BLW"
+  ],
+  "pvp": 21.99,
+  "fuente_url": "https://www.babatekids.com/es/tienda/babero-impermeable-manga-larga-unitario-estampado-bosque-encantado/",
+  "fuente": "babatekids.com",
+  "desc": "Babero con mangas que cubre brazos y pecho en las primeras comidas. Diseñado en España, se limpia fácil y deja al bebé comer solo sin mancharse la ropa.",
+  "imagen": "babero-manga-larga-bosque-encantado-babate.jpg",
+  "portada": true,
+  "luna": true
+ },
+ {
+  "slug": "el-ladron-de-calabazas",
+  "nombre": "El ladrón de calabazas",
+  "marca": "Ediciones Jaguar",
+  "cat": "libros",
+  "edad": null,
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Alice Hemming (texto) y Nicola Slater (ilustración)",
+   "32 páginas, cartoné, 275 x 250 mm",
+   "ISBN 979-13-88030-12-3 · publicado el 21-09-2026"
+  ],
+  "pvp": 16.95,
+  "fuente_url": "https://www.todostuslibros.com/libros/el-ladron-de-calabazas_979-13-88030-12-3",
+  "fuente": "todostuslibros.com",
+  "desc": "Nueva aventura de Ardilla y Pájaro: las calabazas de su huerto empiezan a desaparecer y toca encontrar al ladrón. Un álbum otoñal de los autores de El ladrón de hojas.",
+  "imagen": "el-ladron-de-calabazas.jpg",
+  "nota": "halloween",
+  "portada": true,
+  "sello": "Novedad"
+ },
+ {
+  "slug": "pinta-rollos-el-oceano-manolito",
+  "nombre": "Pinta rollos · El océano",
+  "marca": "Manolito Books",
+  "cat": "manualidades",
+  "edad": "De 3 a 6 años",
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Rollo de 5 metros para colorear + 4 lápices de colores (según la caja)",
+   "Caja 24,5 x 8 x 8 cm",
+   "ISBN 9788419935441"
+  ],
+  "pvp": 11.95,
+  "fuente_url": "https://manolitobooks.com/products/pinta-rollos-el-oceano",
+  "fuente": "manolitobooks.com",
+  "desc": "Una tira de papel de cinco metros con escenas del fondo del mar para colorear, que se va desenrollando sobre la mesa o el suelo. Viene en caja con lápices incluidos.",
+  "imagen": "pinta-rollos-el-oceano-manolito.jpg",
+  "nota": "rollo",
+  "portada": true
+ },
+ {
+  "slug": "pack-2-baberos-sin-mangas-dinosaurios-babate",
+  "nombre": "Pack de 2 baberos sin mangas · Dinosaurios",
+  "marca": "Babaté Kids",
+  "cat": "comer",
+  "edad": "De 6 meses a 5 años",
+  "etapas": [
+   "0-1",
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "2 baberos por pack",
+   "Poliéster ligero y transpirable, libre de PVC y ftalatos",
+   "Cierre de velcro ajustable y bolsillo delantero"
+  ],
+  "pvp": 17.99,
+  "fuente_url": "https://www.babatekids.com/es/tienda/pack-2-baberos-impermeables-sin-mangas-estampado-dinosaurios/",
+  "fuente": "babatekids.com",
+  "desc": "Dos baberos impermeables sin mangas con estampado de dinosaurios para la alimentación complementaria. Ligeros, fáciles de poner y quitar, con bolsillo para recoger lo que cae.",
+  "imagen": "pack-2-baberos-sin-mangas-dinosaurios-babate.jpg"
+ },
+ {
+  "slug": "triciclo-gyro-olmitos",
+  "nombre": "Triciclo evolutivo Gyro",
+  "marca": "Olmitos",
+  "cat": "paseo",
+  "edad": "De 12 meses a 5 años (hasta 25 kg)",
+  "etapas": [
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "5 formas de uso, de triciclo a bicicleta sin herramientas",
+   "Medidas 67 x 46 x 84/93 cm; altura del asiento 31-37 cm",
+   "Peso 6,4 kg; aro protector, timbre y ruedas de goma"
+  ],
+  "pvp": 101.9,
+  "fuente_url": "https://olmitos.com/es/sillas-de-paseo-y-coche/triciclos/triciclo-gyro-.html",
+  "fuente": "olmitos.com",
+  "desc": "Versión renovada del Gyro, un triciclo que crece por etapas: con respaldo y aro para los más pequeños y, al final, como bici de dos ruedas. Asiento y manillar se regulan según la altura del niño.",
+  "imagen": "triciclo-gyro-olmitos.jpg",
+  "nota": "olmitos",
+  "sello": "Solo con reserva"
+ },
+ {
+  "slug": "baby-puzzles-animales-granja-educa",
+  "nombre": "Baby Puzzles · Animales de la granja",
+  "marca": "Educa",
+  "cat": "juego",
+  "edad": "De 1 a 3 años",
+  "etapas": [
+   "1-3"
+  ],
+  "datos": [
+   "5 puzzles progresivos de 2 a 4 piezas",
+   "Piezas más grandes y gruesas",
+   "Ref. 17574 · EAN 8412668175747"
+  ],
+  "pvp": null,
+  "fuente_url": "https://www.educaborras.com/es/39873-baby-puzzles-animales-de-la-granja.html",
+  "fuente": "educaborras.com",
+  "desc": "Los animales de la granja en cinco puzzles muy sencillos, desde dos piezas, pensados para las primeras manos. Cada figura terminada se convierte en un juguete.",
+  "imagen": "baby-puzzles-animales-granja-educa.jpg",
+  "nota": "educa"
+ },
+ {
+  "slug": "baby-puzzles-mickey-educa",
+  "nombre": "Baby Puzzles · Mickey",
+  "marca": "Educa",
+  "cat": "juego",
+  "edad": "De 2 a 4 años",
+  "etapas": [
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "5 puzzles progresivos de 3 a 5 piezas",
+   "Piezas grandes y gruesas",
+   "Caja 31,6 x 21,7 x 4,6 cm (ref. 13813)"
+  ],
+  "pvp": 14.99,
+  "fuente_url": "https://www.toysrus.es/Educa-Borr%C3%A1s-Mickey-Mouse-Baby-Puzzles/p/K1017063",
+  "fuente": "toysrus.es",
+  "desc": "Mickey y sus amigos en cinco puzzles que suben de dificultad poco a poco. Un primer contacto con los puzzles con personajes que los niños ya conocen.",
+  "imagen": "baby-puzzles-mickey-educa.jpg",
+  "nota": "educa"
+ },
+ {
+  "slug": "pinta-rollos-los-dinosaurios-manolito",
+  "nombre": "Pinta rollos · Los dinosaurios",
+  "marca": "Manolito Books",
+  "cat": "manualidades",
+  "edad": "De 3 a 6 años",
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Rollo de 5 metros para colorear",
+   "Caja 24,5 x 8 x 8 cm",
+   "ISBN 9788419935465"
+  ],
+  "pvp": 11.95,
+  "fuente_url": "https://manolitobooks.com/products/pinta-rollos-los-dinosaurios",
+  "fuente": "manolitobooks.com",
+  "desc": "Cinco metros de dinosaurios para colorear en un rollo que se despliega poco a poco. Ideal para pintar entre varios niños a la vez.",
+  "imagen": "pinta-rollos-los-dinosaurios-manolito.jpg",
+  "nota": "rollo"
+ },
+ {
+  "slug": "mis-primeras-actividades-artisticas-animales-manolito",
+  "nombre": "Maletín de actividades artísticas · Animales",
+  "marca": "Manolito Books",
+  "cat": "manualidades",
+  "edad": "De 3 a 6 años (4+ en la caja)",
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "Maletín con librito, 50 pegatinas, 200 calcomanías y 4 escenarios",
+   "Caja 22 x 19 x 5 cm; libro 15 x 21 cm",
+   "ISBN 9788419714121"
+  ],
+  "pvp": 14.95,
+  "fuente_url": "https://manolitobooks.com/products/animales-2",
+  "fuente": "manolitobooks.com",
+  "desc": "Maletín de manualidades sobre los animales del planeta: colorear, pegar pegatinas, transferir calcomanías y completar escenarios. Incluye pequeños experimentos para aprender jugando.",
+  "imagen": "mis-primeras-actividades-artisticas-animales-manolito.jpg",
+  "nota": "maletin"
+ },
+ {
+  "slug": "halloween-libro-con-mecanismos",
+  "nombre": "Halloween. Libro con mecanismos",
+  "marca": "Timun Mas Infantil",
+  "cat": "libros",
+  "edad": null,
+  "etapas": [
+   "1-3",
+   "3-6"
+  ],
+  "datos": [
+   "Viv Campbell y Gina Samba",
+   "10 páginas, todo cartón, 19 x 19 cm",
+   "ISBN 978-84-08-31668-8 · publicado el 23-09-2026"
+  ],
+  "pvp": 9.95,
+  "fuente_url": "https://www.planetadelibros.com/libro-halloween-libro-con-mecanismos/444446",
+  "fuente": "planetadelibros.com",
+  "desc": "Libro de cartón con mecanismos en el que unos hermanos salen a pedir caramelos por el barrio. Las sorpresas aparecen al mover cada pieza.",
+  "imagen": "halloween-libro-con-mecanismos.webp",
+  "nota": "halloween",
+  "sello": "Novedad"
+ },
+ {
+  "slug": "truco-o-trato",
+  "nombre": "Truco o trato",
+  "marca": "Beascoa",
+  "cat": "libros",
+  "edad": "De 4 a 6 años",
+  "etapas": [
+   "3-6"
+  ],
+  "datos": [
+   "El Hematocrítico (texto) e Ignacio Hernández (ilustración)",
+   "32 páginas, cartoné, 316 x 247 mm",
+   "ISBN 978-84-488-6620-4"
+  ],
+  "pvp": 16.95,
+  "fuente_url": "https://www.todostuslibros.com/libros/truco-o-trato_978-84-488-6620-4",
+  "fuente": "todostuslibros.com",
+  "desc": "La noche de Halloween, una pandilla disfrazada de vampiros, momias y brujas sale a dar sustos por el barrio. Un cuento con humor para leer en familia, con final sorpresa.",
+  "imagen": "truco-o-trato.jpg",
+  "nota": "halloween"
+ }
+]

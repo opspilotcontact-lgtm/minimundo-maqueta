@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es" data-raiz="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Babero de manga larga · Bosque encantado · Minimundo</title>
+<meta name="description" content="Babero de manga larga · Bosque encantado de Babaté Kids en Minimundo, La Carlota. Babero con mangas que cubre brazos y pecho en las primeras comidas. Diseñ">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#234A78">
+<link rel="icon" href="../../img/simbolo.svg" type="image/svg+xml">
+<link rel="preload" href="../../fonts/lexend-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Lexend';font-style:normal;font-weight:300 800;font-display:swap;src:url(../../fonts/lexend-var-latin.woff2) format('woff2')}
+:root{
+  --cal:#FBF6EE; --cal-2:#F3EADC; --blanco:#FFFDF9; --tinta:#1F2340; --tinta-2:#4A4E68;
+  --anil:#234A78; --anil-2:#1B3B61; --cielo:#659DC0; --cielo-claro:#DDEBF4; --rosa:#E3A3A6; --rosa-claro:#F6DCDA; --rosa-hondo:#9E4F57;
+  --linea:rgb(31 35 64/.14);
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --f:'Lexend',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:6px; --gut:16px; --max:1240px;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--cal);color:var(--tinta);font:300 1rem/1.6 var(--f);overflow-x:clip}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;font-weight:600;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--cielo);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+@media(min-width:760px){:root{--gut:32px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* botones: rectos, caja normal */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:.75em 1.3em;border-radius:var(--r);border:2px solid transparent;font-weight:500;font-size:1rem;text-decoration:none;transition:transform .25s var(--ease),background-color .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-anil{background:var(--anil);color:var(--cal)}
+.btn-anil:hover{background:var(--anil-2)}
+.btn-cal{background:var(--cal);color:var(--anil)}
+.btn-rosa{background:var(--rosa);color:var(--tinta)}
+.btn-linea{border-color:currentColor;background:transparent}
+.btn-wa{background:#1F6E4A;color:#fff}
+
+/* franjas superiores */
+.aviso{background:var(--tinta);color:var(--cal);font-size:.78rem;text-align:center;padding:.45rem var(--gut)}
+.aviso a{color:var(--rosa-claro)}
+.temporada{display:block;background:var(--rosa);color:var(--tinta);text-align:center;padding:.6rem var(--gut);font-size:.92rem;font-weight:500;text-decoration:none}
+.temporada b{font-weight:700}
+.temporada span{text-decoration:underline;text-underline-offset:3px}
+
+/* cabecera de tienda */
+.cab{position:sticky;top:0;z-index:40;background:rgb(251 246 238/.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linea)}
+.cab .wrap{display:flex;align-items:center;gap:1rem;min-height:64px}
+.marca{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--anil)}
+.marca svg{width:2rem;height:2rem}
+.marca b{font-weight:600;font-size:1.32rem;letter-spacing:-.03em}
+.menu{display:none;gap:1.4rem;margin-left:1.5rem}
+.menu a{text-decoration:none;font-weight:400;font-size:.95rem;padding:.4rem 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a[aria-current]{border-color:var(--rosa)}
+@media(min-width:960px){.menu{display:flex}}
+.herr{margin-left:auto;display:flex;align-items:center;gap:.25rem}
+.icono{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:var(--r);background:none;border:0;text-decoration:none;position:relative}
+.icono:hover{background:var(--cal-2)}
+.icono svg{width:24px;height:24px}
+.cuenta{position:absolute;top:4px;right:2px;min-width:19px;height:19px;padding:0 5px;border-radius:10px;background:var(--anil);color:var(--cal);font-size:.7rem;font-weight:600;line-height:19px;text-align:center;transform:scale(0);transition:transform .3s var(--ease)}
+.cuenta.si{transform:scale(1)}
+.bolsa-btn.late{animation:late .5s var(--ease)}
+@keyframes late{40%{transform:scale(1.18)}}
+.menu-movil{display:flex;gap:.4rem;overflow-x:auto;padding:0 var(--gut) .6rem;scrollbar-width:none}
+.menu-movil a{flex:none;text-decoration:none;font-size:.88rem;padding:.35rem .8rem;border:1px solid var(--linea);border-radius:var(--r);background:var(--blanco)}
+@media(min-width:960px){.menu-movil{display:none}}
+
+/* portada */
+.portada{background:var(--anil);color:var(--cal);overflow:hidden;position:relative}
+.portada .wrap{display:grid;gap:1.5rem;padding-top:2.2rem;padding-bottom:2.6rem;align-items:center}
+@media(min-width:900px){.portada .wrap{grid-template-columns:1.02fr 1fr;padding-top:3rem;padding-bottom:3.4rem}}
+.portada h1{font-size:clamp(2.7rem,7.6vw,5.6rem);font-weight:650;letter-spacing:-.045em;line-height:.98}
+.portada h1 em{font-style:normal;color:var(--rosa)}
+.portada .bajada{font-size:clamp(1.06rem,1.8vw,1.28rem);max-width:33ch;margin-top:1.2rem;color:#E6ECF4}
+.portada .acciones{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}
+.garantias{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin:1.8rem 0 0;padding:0;list-style:none;font-size:.9rem;color:#D5DEEA}
+.garantias li{display:flex;align-items:center;gap:.45rem}
+.garantias svg{width:18px;height:18px;color:var(--rosa)}
+
+/* el minimundo: planeta con órbita */
+.mundo{position:relative;width:min(100%,560px);aspect-ratio:1;margin:0 auto}
+.mundo>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.orbita{position:absolute;inset:0;animation:gira 90s linear infinite}
+.luna{position:absolute;left:50%;top:50%;width:17%;aspect-ratio:1;margin:-8.5% 0 0 -8.5%;transform:rotate(var(--a)) translateX(var(--rad,235%)) rotate(calc(-1*var(--a)))}
+.luna a{display:block;width:100%;height:100%;border-radius:50%;background:var(--blanco);box-shadow:0 10px 24px rgb(10 20 40/.28);animation:contra 90s linear infinite;overflow:hidden;transition:scale .3s var(--ease)}
+.luna a:hover{scale:1.08}
+.luna img{width:100%;height:100%;object-fit:contain;padding:14%;mix-blend-mode:multiply}
+@keyframes gira{to{transform:rotate(360deg)}}
+@keyframes contra{to{transform:rotate(-360deg)}}
+.paseante{transform-box:view-box;transform-origin:300px 300px;animation:gira 46s linear infinite}
+.mundo:hover .orbita,.mundo:hover .luna a{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.orbita,.luna a,.paseante{animation:none}}
+
+/* bloques generales */
+.bloque{padding:clamp(3.2rem,8vw,6rem) 0}
+.cabeza{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:2rem}
+.cabeza h2{font-size:clamp(1.9rem,4.4vw,3.1rem)}
+.cabeza p{max-width:46ch;color:var(--tinta-2)}
+.ver-todo{font-weight:500;text-decoration:none;border-bottom:2px solid var(--rosa);padding-bottom:2px}
+
+/* rejilla de productos */
+.rejilla{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.4rem .9rem;list-style:none;margin:0;padding:0}
+@media(min-width:700px){.rejilla{grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 1.2rem}}
+@media(min-width:1080px){.rejilla{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.prod{position:relative;display:flex;flex-direction:column}
+.prod .foto{position:relative;display:block;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--fondo,var(--cal-2))}
+.prod .foto img{width:100%;height:100%;object-fit:contain;padding:12%;mix-blend-mode:multiply;transition:transform .6s var(--ease)}
+.prod:hover .foto img{transform:scale(1.05)}
+.prod .sello{position:absolute;left:.6rem;top:.6rem;background:var(--tinta);color:var(--cal);font-size:.72rem;font-weight:500;padding:.2rem .5rem;border-radius:4px}
+.prod .sello.reserva{background:var(--rosa-hondo)}
+.prod .marca-p{margin-top:.75rem;font-size:.78rem;color:var(--tinta-2)}
+.prod h3{font-size:1rem;font-weight:500;line-height:1.3;letter-spacing:-.01em;margin-top:.15rem}
+.prod h3 a{text-decoration:none}
+.prod h3 a::after{content:"";position:absolute;inset:0;z-index:1}
+.prod .pie-p{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-top:auto;padding-top:.6rem}
+.precio{font-weight:600;font-size:1.06rem;font-variant-numeric:tabular-nums}
+.precio.sin{font-weight:400;font-size:.9rem;color:var(--tinta-2)}
+.anadir{position:relative;z-index:2;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:var(--r);border:0;background:var(--anil);color:var(--cal);transition:transform .25s var(--ease)}
+.anadir:hover{transform:scale(1.08)}
+.anadir svg{width:20px;height:20px}
+.anadir.hecho{background:#1F6E4A}
+.nota-mini{font-size:.82rem;color:var(--tinta-2);margin-top:.35rem;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* fondos por categoría */
+.c-comer{--fondo:#F6DCDA}.c-paseo{--fondo:#DDEBF4}.c-juego{--fondo:#F1E6CF}.c-libros{--fondo:#E4E8DA}.c-manualidades{--fondo:#EDE0EE}.c-embarazo{--fondo:#F8E4DC}
+
+/* reservas de navidad */
+.reservas{background:var(--rosa-claro)}
+.reservas .wrap{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.reservas .wrap{grid-template-columns:1fr 1fr;gap:4rem}}
+.reservas .escaparate{position:relative;aspect-ratio:4/3;border-radius:50% 50% var(--r) var(--r);background:var(--blanco);display:grid;place-items:center;overflow:hidden}
+.reservas .escaparate img{width:auto;height:88%;mix-blend-mode:multiply}
+@media(min-width:900px){.reservas .escaparate{aspect-ratio:1}}
+.reservas h2{font-size:clamp(2rem,5vw,3.4rem)}
+.reservas .txt>p{margin-top:1rem;max-width:44ch;font-size:1.06rem}
+.cuenta-atras{display:flex;gap:.6rem;margin:1.6rem 0;align-items:baseline}
+.cuenta-atras b{font-size:clamp(3rem,8vw,4.6rem);font-weight:700;letter-spacing:-.05em;line-height:1;color:var(--rosa-hondo);font-variant-numeric:tabular-nums}
+.cuenta-atras span{max-width:14ch;line-height:1.3}
+
+/* la etiqueta de Marta (gesto) */
+.etiqueta{position:relative;display:block;max-width:24rem;margin:1.6rem 0;padding:1.1rem 1.2rem 1.1rem 2.6rem;background:var(--blanco);border-radius:4px 14px 14px 4px;box-shadow:0 1px 0 var(--linea),0 10px 26px rgb(31 35 64/.08);rotate:-1.2deg;font-size:.98rem;line-height:1.5}
+.etiqueta::before{content:"";position:absolute;left:1rem;top:50%;width:.7rem;height:.7rem;margin-top:-.35rem;border-radius:50%;background:var(--cal);box-shadow:inset 0 0 0 2px var(--linea)}
+.etiqueta::after{content:"";position:absolute;left:-2.2rem;top:50%;width:3.6rem;height:2px;background:var(--rosa-hondo);rotate:-14deg;transform-origin:right}
+.etiqueta cite{display:block;margin-top:.5rem;font-style:normal;font-size:.8rem;color:var(--tinta-2)}
+.etiqueta q{quotes:none}
+
+/* por edad */
+.edades{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;list-style:none;margin:0;padding:0}
+@media(min-width:760px){.edades{grid-template-columns:repeat(5,1fr)}}
+.edades a{display:flex;flex-direction:column;justify-content:space-between;min-height:9.5rem;padding:1rem;border-radius:var(--r);text-decoration:none;background:var(--fondo);transition:transform .3s var(--ease)}
+.edades a:hover{transform:translateY(-4px)}
+.edades b{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:650;letter-spacing:-.04em;line-height:1}
+.edades span{font-size:.88rem;color:var(--tinta-2)}
+.edades li:nth-child(1) a{--fondo:var(--rosa-claro)}
+.edades li:nth-child(2) a{--fondo:#F8E4DC}
+.edades li:nth-child(3) a{--fondo:var(--cielo-claro)}
+.edades li:nth-child(4) a{--fondo:#F1E6CF}
+.edades li:nth-child(5) a{--fondo:#E4E8DA}
+.edades li:nth-child(5){grid-column:span 2}
+@media(min-width:760px){.edades li:nth-child(5){grid-column:auto}}
+
+/* carritos con cita */
+.carritos{background:var(--cielo-claro)}
+.carritos .wrap{display:grid;gap:2.4rem;align-items:center}
+@media(min-width:900px){.carritos .wrap{grid-template-columns:1.1fr .9fr;gap:4rem}}
+.carritos h2{font-size:clamp(2rem,5vw,3.5rem)}
+.carritos .txt p{margin-top:1rem;max-width:46ch;font-size:1.06rem}
+.pasos{counter-reset:p;list-style:none;margin:1.6rem 0 2rem;padding:0;display:grid;gap:.9rem}
+.pasos li{counter-increment:p;display:grid;grid-template-columns:2.4rem 1fr;gap:.8rem;align-items:start}
+.pasos li::before{content:counter(p);display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--anil);color:var(--cal);font-weight:600}
+.pasos b{display:block;font-weight:600}
+.acera{width:100%;height:auto;color:var(--anil)}
+.acera .rueda{transform-box:fill-box;transform-origin:center;animation:rueda 3s linear infinite}
+@keyframes rueda{to{transform:rotate(360deg)}}
+.acera .empuja{animation:empuja 6s var(--ease) infinite alternate}
+@keyframes empuja{from{transform:translateX(-14px)}to{transform:translateX(14px)}}
+@media(prefers-reduced-motion:reduce){.acera .rueda,.acera .empuja{animation:none}}
+
+/* marta */
+.marta{background:var(--cal-2)}
+.marta .wrap{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.marta .wrap{grid-template-columns:.8fr 1.2fr;gap:4rem}}
+.marta .arco{border-radius:999px 999px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--cielo)}
+.marta .arco img{width:100%;height:100%;object-fit:cover}
+.marta blockquote{margin:0;font-size:clamp(1.4rem,3.2vw,2.15rem);font-weight:400;line-height:1.3;letter-spacing:-.02em}
+.marta .firma{margin-top:1.4rem;font-weight:500}
+.marta .firma span{display:block;font-weight:300;color:var(--tinta-2);font-size:.92rem}
+.marta figcaption{font-size:.75rem;color:var(--tinta-2);margin-top:.5rem}
+
+/* club */
+.club{background:var(--tinta);color:var(--cal)}
+.club .wrap{display:grid;gap:2rem}
+@media(min-width:900px){.club .wrap{grid-template-columns:1fr 1fr;gap:4rem;align-items:end}}
+.club h2{font-size:clamp(2.2rem,6vw,4.4rem);letter-spacing:-.04em}
+.club p{color:#D7D9E6;max-width:44ch;font-size:1.06rem}
+.club .reglas{list-style:none;padding:0;margin:1.2rem 0 1.8rem;display:grid;gap:.5rem}
+.club .reglas li{padding-left:1.4rem;position:relative}
+.club .reglas li::before{content:"";position:absolute;left:0;top:.62em;width:.6rem;height:.6rem;border-radius:50%;background:var(--rosa)}
+.lomos{display:flex;align-items:end;gap:5px;height:7rem;margin-bottom:1.6rem}
+@media(min-width:900px){.lomos{height:12rem}}
+.lomos i{flex:1;border-radius:3px 3px 0 0;background:var(--c);height:var(--h)}
+
+/* lista de nacimiento */
+.lista-n .wrap{display:grid;gap:2rem;align-items:center}
+@media(min-width:900px){.lista-n .wrap{grid-template-columns:1fr 1fr;gap:4rem}}
+.lista-n h2{font-size:clamp(2rem,5vw,3.3rem)}
+.lista-n p{margin-top:1rem;max-width:44ch;font-size:1.06rem}
+.ticket{background:var(--blanco);border-radius:var(--r);padding:1.4rem;box-shadow:0 18px 40px rgb(31 35 64/.1);rotate:1.5deg;max-width:26rem;justify-self:center;width:100%}
+.ticket h3{font-size:1.15rem}
+.ticket ul{list-style:none;margin:1rem 0 0;padding:0}
+.ticket li{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-top:1px dashed var(--linea);font-size:.94rem}
+.ticket li s,.ticket li span+*{white-space:nowrap}
+.ticket li s{color:var(--tinta-2)}
+.ticket .de{font-size:.8rem;color:#1F6E4A;font-weight:500}
+
+/* visita */
+.visita .wrap{display:grid;gap:2rem}
+@media(min-width:900px){.visita .wrap{grid-template-columns:1fr 1fr;gap:4rem;align-items:center}}
+.visita h2{font-size:clamp(1.9rem,4.4vw,3rem)}
+.visita dl{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1.4rem;margin:1.4rem 0 1.8rem}
+.visita dt{color:var(--tinta-2)}
+.visita dd{margin:0;font-weight:400}
+.visita img{border-radius:var(--r)}
+.visita figcaption{font-size:.75rem;color:var(--tinta-2);margin-top:.5rem}
+
+/* pie */
+.pie{background:var(--anil);color:#E6ECF4;padding:3rem 0 2rem;font-size:.92rem}
+.pie .cols{display:grid;gap:2rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.pie .cols{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+.pie .marca{color:var(--cal)}
+.pie h2{font-size:.95rem;font-weight:600;margin-bottom:.7rem;color:var(--cal)}
+.pie ul{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+.pie a{text-decoration:none}
+.pie a:hover{text-decoration:underline}
+.pie .legal{margin-top:2.4rem;padding-top:1.2rem;border-top:1px solid rgb(251 246 238/.18);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;font-size:.8rem;color:#C2CCDA}
+
+/* bolsa (cajón) */
+.velo{position:fixed;inset:0;background:rgb(20 24 44/.45);z-index:60;opacity:0;pointer-events:none;transition:opacity .3s var(--ease)}
+.cajon{position:fixed;top:0;right:0;bottom:0;z-index:61;width:min(420px,100%);background:var(--cal);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .4s var(--ease),box-shadow .4s}
+body.bolsa-abierta .velo{opacity:1;pointer-events:auto}
+body.bolsa-abierta .cajon{transform:none;box-shadow:-20px 0 50px rgb(20 24 44/.2)}
+.cajon header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;border-bottom:1px solid var(--linea)}
+.cajon header h2{font-size:1.25rem}
+.cajon .items{flex:1;overflow-y:auto;padding:.4rem 1.2rem;list-style:none;margin:0}
+.cajon .items li{display:grid;grid-template-columns:64px 1fr auto;gap:.8rem;align-items:center;padding:.8rem 0;border-bottom:1px solid var(--linea)}
+.cajon .items img{width:64px;height:64px;object-fit:contain;border-radius:4px;background:var(--fondo,var(--cal-2));padding:6px;mix-blend-mode:multiply}
+.cajon .items b{display:block;font-weight:500;font-size:.92rem;line-height:1.3}
+.cajon .items small{color:var(--tinta-2)}
+.cant{display:inline-flex;align-items:center;border:1px solid var(--linea);border-radius:4px;margin-top:.3rem}
+.cant button{width:30px;height:30px;border:0;background:none}
+.cant span{min-width:1.6rem;text-align:center;font-size:.9rem}
+.cajon .vacia{padding:2rem 1.2rem;color:var(--tinta-2)}
+.cajon footer{padding:1.1rem 1.2rem 1.3rem;border-top:1px solid var(--linea);display:grid;gap:.6rem;background:var(--blanco)}
+.cajon .total{display:flex;justify-content:space-between;font-size:1.05rem}
+.cajon .total b{font-weight:600}
+.cajon .como{font-size:.8rem;color:var(--tinta-2);line-height:1.45}
+.entrega{display:flex;gap:.4rem}
+.entrega label{flex:1}
+.entrega input{position:absolute;opacity:0}
+.entrega span{display:block;text-align:center;padding:.55rem;border:1px solid var(--linea);border-radius:4px;font-size:.88rem;cursor:pointer}
+.entrega input:checked+span{border-color:var(--anil);background:var(--cielo-claro);font-weight:500}
+.entrega input:focus-visible+span{outline:3px solid var(--cielo)}
+.vuela{position:fixed;z-index:70;pointer-events:none;border-radius:50%;object-fit:contain;background:var(--blanco);box-shadow:0 8px 20px rgb(0 0 0/.2);transition:transform .7s cubic-bezier(.5,-.3,.7,1),opacity .7s ease-in}
+.aviso-flot{position:fixed;left:50%;bottom:1.2rem;z-index:65;translate:-50% 0;background:var(--tinta);color:var(--cal);padding:.7rem 1.1rem;border-radius:var(--r);font-size:.9rem;opacity:0;transform:translateY(12px);transition:opacity .3s,transform .3s var(--ease);pointer-events:none}
+.aviso-flot.si{opacity:1;transform:none}
+
+/* catálogo */
+.tit-pag{padding:2.4rem 0 1.4rem}
+.tit-pag h1{font-size:clamp(2.2rem,5.6vw,3.8rem);letter-spacing:-.04em}
+.tit-pag p{margin-top:.6rem;color:var(--tinta-2);max-width:56ch}
+.filtros{position:sticky;top:64px;z-index:20;background:var(--cal);padding:.7rem 0;border-bottom:1px solid var(--linea);margin-bottom:1.6rem}
+.filtros .wrap{display:grid;gap:.6rem}
+.chips{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.chips button{flex:none;min-height:40px;padding:.4rem .9rem;border:1px solid var(--linea);border-radius:var(--r);background:var(--blanco);font-size:.88rem}
+.chips button[aria-pressed=true]{background:var(--anil);border-color:var(--anil);color:var(--cal)}
+.busca-fila{display:flex;gap:.6rem;align-items:center}
+.busca-fila input,.busca-fila select{min-height:42px;border:1px solid var(--linea);border-radius:var(--r);background:var(--blanco);padding:.4rem .8rem;font:inherit;font-size:.92rem;color:var(--tinta)}
+.busca-fila input{flex:1;min-width:0}
+.cuantos{font-size:.85rem;color:var(--tinta-2);margin-bottom:1rem}
+
+/* ficha de producto */
+.miga{font-size:.85rem;color:var(--tinta-2);padding:1.2rem 0}
+.miga a{text-decoration:none}
+.miga a:hover{text-decoration:underline}
+.ficha{display:grid;gap:2rem;padding-bottom:4rem}
+@media(min-width:900px){.ficha{grid-template-columns:1.05fr .95fr;gap:4rem;align-items:start}}
+.ficha .foto{position:sticky;top:84px;aspect-ratio:1;border-radius:var(--r);background:var(--fondo,var(--cal-2));display:grid;place-items:center;overflow:hidden}
+.ficha .foto img{width:82%;height:82%;object-fit:contain;mix-blend-mode:multiply}
+@media(max-width:899px){.ficha .foto{position:static}}
+.ficha .marca-p{color:var(--tinta-2);font-size:.92rem}
+.ficha h1{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.03em;margin-top:.3rem}
+.ficha .precio{display:block;font-size:1.7rem;margin-top:1rem}
+.ficha .orient{font-size:.8rem;color:var(--tinta-2)}
+.ficha .desc{margin-top:1.2rem;font-size:1.04rem;max-width:52ch}
+.ficha .comprar{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.ficha .comprar .btn{flex:1 1 13rem}
+.servicio{list-style:none;margin:1.6rem 0 0;padding:0;border-top:1px solid var(--linea)}
+.servicio li{display:flex;gap:.7rem;align-items:flex-start;padding:.8rem 0;border-bottom:1px solid var(--linea);font-size:.94rem}
+.servicio svg{width:20px;height:20px;flex:none;margin-top:.15rem;color:var(--anil)}
+.datos{margin:1.6rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.2rem;font-size:.94rem}
+.datos dt{color:var(--tinta-2)}
+.datos dd{margin:0}
+.origen{font-size:.78rem;color:var(--tinta-2);margin-top:1.4rem}
+
+/* página de carritos */
+.hoja{background:var(--blanco);border-radius:var(--r);padding:1.4rem;box-shadow:0 18px 40px rgb(31 35 64/.08)}
+@media(min-width:760px){.hoja{padding:2rem}}
+.hoja h2{font-size:1.5rem}
+.hoja .intro{color:var(--tinta-2);margin:.4rem 0 1.2rem}
+.hoja fieldset{border:0;margin:0 0 1.1rem;padding:0}
+.hoja legend{font-weight:500;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.hoja legend .n{display:inline-grid;place-items:center;width:1.6rem;height:1.6rem;border-radius:50%;background:var(--rosa-claro);font-size:.82rem;font-weight:600}
+.ops{display:flex;flex-wrap:wrap;gap:.4rem}
+.ops input{position:absolute;opacity:0}
+.ops span{display:block;padding:.5rem .85rem;border:1px solid var(--linea);border-radius:var(--r);font-size:.9rem;cursor:pointer;background:var(--cal)}
+.ops input:checked+span{background:var(--anil);border-color:var(--anil);color:var(--cal)}
+.ops input:focus-visible+span{outline:3px solid var(--cielo)}
+.resultado{margin-top:1.2rem;padding-top:1.2rem;border-top:1px dashed var(--linea)}
+.resultado h3{font-size:1.05rem;margin-bottom:.5rem}
+.resultado ul{margin:0 0 1rem;padding-left:1.1rem;display:grid;gap:.3rem;font-size:.94rem}
+.resultado .vacio{color:var(--tinta-2);font-size:.92rem}
+
+/* entradas suaves (solo navegadores que lo soportan, sin JS) */
+@supports (animation-timeline:view()){
+  @media(prefers-reduced-motion:no-preference){
+    .sube{animation:sube linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+    @keyframes sube{from{transform:translateY(28px)}}
+  }
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Babero de manga larga · Bosque encantado", "brand": {"@type": "Brand", "name": "Babaté Kids"}, "image": "img/p/babero-manga-larga-bosque-encantado-babate.webp", "description": "Babero con mangas que cubre brazos y pecho en las primeras comidas. Diseñado en España, se limpia fácil y deja al bebé comer solo sin mancharse la ropa.", "offers": {"@type": "Offer", "priceCurrency": "EUR", "price": 21.99, "availability": "https://schema.org/InStoreOnly"}}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="simbolo" viewBox="0 0 100 100"><clipPath id="si"><path d="M48 4a46 46 0 0 0 0 92z"/></clipPath><clipPath id="sd"><path d="M52 4a46 46 0 0 1 0 92z"/></clipPath><g clip-path="url(#si)"><path d="M48 4a46 46 0 0 0 0 92z" fill="#E3A3A6"/><path d="M30 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g><g clip-path="url(#sd)"><path d="M52 4a46 46 0 0 1 0 92z" fill="#659DC0"/><path d="M55 100V79a7.5 7.5 0 0 1 15 0v21z" fill="#FBF6EE"/></g></symbol>
+<symbol id="i-bolsa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+<symbol id="i-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+<symbol id="i-mas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-cierra" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="i-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.3 4.8 4.9-1.3A9.8 9.8 0 1 0 12 2.2Zm0 17.9a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+<symbol id="i-mano" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+<symbol id="i-envio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></symbol>
+<symbol id="i-regalo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13"/><path d="M12 7c-1.5-3-5-3-5-1s3 1 5 1c2 0 5 1 5-1s-3.5-2-5 1"/></symbol>
+<symbol id="i-calma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+</svg>
+<a class="sr" href="#contenido">Saltar al contenido</a>
+<p class="aviso">Propuesta de <a href="../../propuesta/">OpsPilot</a> para Minimundo · catálogo de demostración con productos que Marta ya vende (precios de referencia) · servicios por confirmar · <a href="../../v1/">ver v1</a></p>
+<a class="temporada" href="../../producto/triciclo-elliot-olmitos/"><b>Reservas de Reyes abiertas.</b> Los triciclos Olmitos solo se consiguen reservados: <span>reservar el mío</span></a>
+<header class="cab">
+  <div class="wrap">
+    <a class="marca" href="../../" aria-label="Minimundo, inicio"><svg aria-hidden="true"><use href="#simbolo"/></svg><b>minimundo</b></a>
+    <nav class="menu" aria-label="Principal"><a href="../../tienda/">Tienda</a><a href="../../tienda/?edad=espera">Bebé en camino</a><a href="../../carritos/">Carritos con cita</a><a href="../../lista/">Lista de nacimiento</a><a href="../../index.html#club">Club de lectura</a></nav>
+    <div class="herr">
+      <a class="icono" href="../../tienda/#busca" aria-label="Buscar en la tienda"><svg aria-hidden="true"><use href="#i-busca"/></svg></a>
+      <a class="icono bolsa-btn" href="../../tienda/" aria-label="Bolsa"><svg aria-hidden="true"><use href="#i-bolsa"/></svg><span class="cuenta" id="cuenta">0</span></a>
+    </div>
+  </div>
+  <nav class="menu-movil" aria-label="Principal en móvil"><a href="../../tienda/">Tienda</a><a href="../../tienda/?edad=espera">Bebé en camino</a><a href="../../carritos/">Carritos con cita</a><a href="../../lista/">Lista de nacimiento</a><a href="../../index.html#club">Club de lectura</a></nav>
+</header>
+<main id="contenido">
+
+<div class="wrap">
+  <nav class="miga" aria-label="Estás en"><a href="../../">Inicio</a> / <a href="../../tienda/">Tienda</a> / <a href="../../tienda/?cat=comer">La hora de comer</a></nav>
+  <div class="ficha c-comer">
+    <div class="foto"><img src="../../img/p/babero-manga-larga-bosque-encantado-babate.webp" alt="Babero de manga larga · Bosque encantado" width="480" height="600"></div>
+    <div>
+      <p class="marca-p">Babaté Kids</p>
+      <h1>Babero de manga larga · Bosque encantado</h1>
+      <span class="precio">21,99 €</span>
+      <span class="orient">PVP de referencia · Marta te confirma el suyo</span>
+      <p class="desc">Babero con mangas que cubre brazos y pecho en las primeras comidas. Diseñado en España, se limpia fácil y deja al bebé comer solo sin mancharse la ropa.</p>
+      <div class="comprar">
+        <button class="btn btn-anil" type="button" data-add="babero-manga-larga-bosque-encantado-babate"><svg aria-hidden="true"><use href="#i-bolsa"/></svg>Añadir a la bolsa</button>
+        <a class="btn btn-linea" target="_blank" rel="noopener" href="https://wa.me/34624840524?text=Hola Marta, ¿tienes «Babero de manga larga · Bosque encantado»?"><svg aria-hidden="true"><use href="#i-wa"/></svg>Preguntar a Marta</a>
+      </div>
+      
+      <ul class="servicio">
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span><b>Apártalo y recógelo</b> en Av. de la Paz, 59 (La Carlota).</span></li>
+        <li><svg aria-hidden="true"><use href="#i-envio"/></svg><span><b>¿Te lo enviamos?</b> Escríbenos y te contamos cómo.</span></li>
+        <li><svg aria-hidden="true"><use href="#i-regalo"/></svg><span><b>¿Es para un bebé que viene?</b> Añádelo a una <a href="../../lista/">lista de nacimiento</a>.</span></li>
+      </ul>
+      <dl class="datos"><dt>Marca</dt><dd>Babaté Kids</dd><dt>Edad</dt><dd>De 6 meses a 2 años</dd><dt>Detalles</dt><dd><ul style="margin:0;padding-left:1.1rem"><li>Poliéster ligero y transpirable, libre de PVC y ftalatos</li><li>Cierre de velcro ajustable al cuello y puños elásticos</li><li>Pensado para alimentación complementaria y BLW</li></ul></dd></dl>
+      <p class="origen">Foto y precio de referencia: <a href="https://www.babatekids.com/es/tienda/babero-impermeable-manga-larga-unitario-estampado-bosque-encantado/">babatekids.com</a>. Catálogo de demostración hasta cargar el de Minimundo.</p>
+    </div>
+  </div>
+  <section class="bloque" style="padding-top:0" aria-labelledby="t-rel">
+    <div class="cabeza"><h2 id="t-rel" style="font-size:clamp(1.5rem,3vw,2rem)">También lo ha elegido Marta</h2></div>
+    <ul class="rejilla"><li class="prod c-comer sube" data-c="comer" data-e="0-1 1-3 3-6" data-p="17.99" data-i="0" data-t="pack de 2 baberos sin mangas · dinosaurios babate kids la hora de comer dos baberos impermeables sin mangas con estampado de dinosaurios para la alimentacion complementaria. ligeros, faciles de poner y quitar, con bolsillo para recoger lo que cae.">
+  <a class="foto" href="../../producto/pack-2-baberos-sin-mangas-dinosaurios-babate/" tabindex="-1" aria-hidden="true"><img src="../../img/p/pack-2-baberos-sin-mangas-dinosaurios-babate.webp" alt="" width="480" height="600" loading="lazy"></a>
+  <p class="marca-p">Babaté Kids</p>
+  <h3><a href="../../producto/pack-2-baberos-sin-mangas-dinosaurios-babate/">Pack de 2 baberos sin mangas · Dinosaurios</a></h3>
+  
+  <div class="pie-p"><span class="precio">17,99 €</span><button class="anadir" type="button" data-add="pack-2-baberos-sin-mangas-dinosaurios-babate" aria-label="Añadir Pack de 2 baberos sin mangas · Dinosaurios a la bolsa"><svg aria-hidden="true"><use href="#i-mas"/></svg></button></div>
+</li><li class="prod c-paseo sube" data-c="paseo" data-e="1-3 3-6" data-p="144.95" data-i="0" data-t="triciclo evolutivo elliot olmitos triciclos y paseo triciclo evolutivo que empieza como carrito guiado por los padres y acaba como triciclo autonomo. el asiento gira para que el nino mire al adulto o al frente, y tiene sitio de sobra para guardar cosas.">
+  <a class="foto" href="../../producto/triciclo-elliot-olmitos/" tabindex="-1" aria-hidden="true"><span class="sello reserva">Solo con reserva</span><img src="../../img/p/triciclo-elliot-olmitos.webp" alt="" width="480" height="600" loading="lazy"></a>
+  <p class="marca-p">Olmitos</p>
+  <h3><a href="../../producto/triciclo-elliot-olmitos/">Triciclo evolutivo Elliot</a></h3>
+  
+  <div class="pie-p"><span class="precio">144,95 €</span><button class="anadir" type="button" data-add="triciclo-elliot-olmitos" aria-label="Añadir Triciclo evolutivo Elliot a la bolsa"><svg aria-hidden="true"><use href="#i-mas"/></svg></button></div>
+</li><li class="prod c-libros sube" data-c="libros" data-e="3-6" data-p="16.95" data-i="0" data-t="el ladron de hojas ediciones jaguar libros ardilla descubre que a su arbol le faltan hojas y sale a buscar al culpable. un album divertido para explicar a los pequenos como llega el otono.">
+  <a class="foto" href="../../producto/el-ladron-de-hojas/" tabindex="-1" aria-hidden="true"><img src="../../img/p/el-ladron-de-hojas.webp" alt="" width="480" height="600" loading="lazy"></a>
+  <p class="marca-p">Ediciones Jaguar</p>
+  <h3><a href="../../producto/el-ladron-de-hojas/">El ladrón de hojas</a></h3>
+  
+  <div class="pie-p"><span class="precio">16,95 €</span><button class="anadir" type="button" data-add="el-ladron-de-hojas" aria-label="Añadir El ladrón de hojas a la bolsa"><svg aria-hidden="true"><use href="#i-mas"/></svg></button></div>
+</li><li class="prod c-juego sube" data-c="juego" data-e="1-3 3-6" data-p="14.99" data-i="0" data-t="baby puzzles · animales educa juego y puzles cinco puzzles progresivos con forma de animal que el nino monta y luego usa como figura de juego. un primer paso para trabajar la atencion y la coordinacion de las manos.">
+  <a class="foto" href="../../producto/baby-puzzles-animales-educa/" tabindex="-1" aria-hidden="true"><img src="../../img/p/baby-puzzles-animales-educa.webp" alt="" width="480" height="600" loading="lazy"></a>
+  <p class="marca-p">Educa</p>
+  <h3><a href="../../producto/baby-puzzles-animales-educa/">Baby Puzzles · Animales</a></h3>
+  
+  <div class="pie-p"><span class="precio">14,99 €</span><button class="anadir" type="button" data-add="baby-puzzles-animales-educa" aria-label="Añadir Baby Puzzles · Animales a la bolsa"><svg aria-hidden="true"><use href="#i-mas"/></svg></button></div>
+</li></ul>
+  </section>
+</div>
+</main>
+<footer class="pie">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="marca" href="../../"><svg aria-hidden="true"><use href="#simbolo"/></svg><b>minimundo</b></a>
+        <p style="margin-top:.8rem;max-width:30ch">Juguetes, libros y todo para tu bebé, elegido de uno en uno en La Carlota.</p>
+      </div>
+      <div><h2>Tienda</h2><ul><li><a href="../../tienda/?cat=comer">La hora de comer</a></li><li><a href="../../tienda/?cat=paseo">Triciclos y paseo</a></li><li><a href="../../tienda/?cat=juego">Juego y puzles</a></li><li><a href="../../tienda/?cat=libros">Libros</a></li><li><a href="../../tienda/?cat=manualidades">Manualidades</a></li><li><a href="../../tienda/?cat=embarazo">Embarazo y regalo</a></li></ul></div>
+      <div><h2>Te ayudamos</h2><ul><li><a href="../../carritos/">Carritos con cita</a></li><li><a href="../../lista/">Lista de nacimiento</a></li><li><a href="../../#club">Club de lectura</a></li><li><a href="https://wa.me/34624840524?text=Hola Marta, tengo una pregunta">Escríbenos por WhatsApp</a></li></ul></div>
+      <div><h2>Visítanos</h2><ul><li>Av. de la Paz, 59</li><li>14100 La Carlota (Córdoba)</li><li><a href="tel:+34624840524">624 84 05 24</a></li><li><a href="https://www.instagram.com/minimundo_kid/">@minimundo_kid</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© Minimundo · La Carlota</span><span>Propuesta de OpsPilot · no indexada · catálogo de demostración</span></div>
+  </div>
+</footer>
+<div class="velo" aria-hidden="true"></div>
+<aside class="cajon" id="cajon" aria-label="Tu bolsa" aria-hidden="true" inert>
+  <header><h2>Tu bolsa</h2><button class="icono" id="cerrar-bolsa" type="button" aria-label="Cerrar la bolsa"><svg aria-hidden="true"><use href="#i-cierra"/></svg></button></header>
+  <p class="vacia" id="bolsa-vacia">Aún no has elegido nada. Mira lo <a href="../../tienda/">recién llegado</a>.</p>
+  <ul class="items" id="bolsa-items"></ul>
+  <footer id="bolsa-pie" hidden>
+    <div class="total"><span>Total orientativo</span><b id="bolsa-total"></b></div>
+    <div class="entrega" role="radiogroup" aria-label="Cómo lo quieres">
+      <label><input type="radio" name="entrega" value="Lo recojo en la tienda" checked><span>Lo recojo</span></label>
+      <label><input type="radio" name="entrega" value="Quiero que me lo enviéis"><span>Envío</span></label>
+    </div>
+    <button class="btn btn-wa" id="apartar" type="button"><svg aria-hidden="true"><use href="#i-wa"/></svg>Apartar por WhatsApp</button>
+    <button class="btn btn-linea" id="hacer-lista" type="button"><svg aria-hidden="true"><use href="#i-regalo"/></svg>Convertir en lista de nacimiento</button>
+    <p class="como">Marta te confirma por WhatsApp que lo tiene y te lo guarda. Pagas al recogerlo o te cuenta el envío.</p>
+  </footer>
+</aside>
+<script src="../../js/catalogo.js" defer></script>
+<script src="../../js/tienda.js" defer></script>
+</body>
+</html>
