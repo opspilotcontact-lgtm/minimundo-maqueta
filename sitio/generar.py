@@ -58,8 +58,8 @@ ICONOS = '''<svg width="0" height="0" style="position:absolute" aria-hidden="tru
 <symbol id="i-calma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
 </svg>'''
 
-AVISO = ('Propuesta de <a href="{r}propuesta/">OpsPilot</a> para Minimundo · catálogo de demostración con productos que Marta ya vende '
-         '(precios de referencia) · servicios por confirmar · <a href="{r}v1/">ver v1</a>')
+AVISO = ('Propuesta de OpsPilot para Minimundo · <a href="{r}propuesta/">Manual de marca y por qué</a> · '
+         'catálogo de demostración (precios de referencia) · servicios por confirmar')
 
 
 def cabeza(titulo, desc, r, extra='', actual=''):
@@ -81,6 +81,12 @@ def cabeza(titulo, desc, r, extra='', actual=''):
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#234A78">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{e(titulo)}">
+<meta property="og:description" content="Así podría ser la web de Minimundo: marca, tienda online y apartado por WhatsApp.">
+<meta property="og:image" content="{URL}img/presentacion.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{r}img/simbolo.svg" type="image/svg+xml">
 <link rel="preload" href="{r}fonts/lexend-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>{CSS.replace("url(../fonts/", "url(" + r + "fonts/")}</style>
@@ -566,6 +572,7 @@ def main():
 
 
 RESERVA = ''
+URL = 'https://opspilotcontact-lgtm.github.io/minimundo-maqueta/'
 CSS = (SITIO / 'tienda.css').read_text(encoding='utf-8')
 if __name__ == '__main__':
     main()
